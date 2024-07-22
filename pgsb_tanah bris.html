@@ -1,0 +1,2245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68a61d75478b5de46b7fbf77dd8a4f03 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68a61d75478b5de46b7fbf77dd8a4f03" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68a61d75478b5de46b7fbf77dd8a4f03 = L.map(
+                "map_68a61d75478b5de46b7fbf77dd8a4f03",
+                {
+                    center: [5.036155147058824, 103.26496604901962],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_23edb4d703f584793907e21958b54de4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_23edb4d703f584793907e21958b54de4.addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+            var tile_layer_ec89c9224a8fdd474f398911455ce7c8 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google Satellite Hybrid", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ec89c9224a8fdd474f398911455ce7c8.addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+            var marker_373358ded0bd1ac30661a849b8eef44e = L.marker(
+                [5.56166, 102.86847],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_3a2570d910b01f5041b177cf84385d07 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_dffbacae503d85cad498122809c59af8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzMTk8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA4NTIzPGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_3a2570d910b01f5041b177cf84385d07.setContent(i_frame_dffbacae503d85cad498122809c59af8);
+            
+        
+
+        marker_373358ded0bd1ac30661a849b8eef44e.bindPopup(popup_3a2570d910b01f5041b177cf84385d07)
+        ;
+
+        
+    
+    
+            var marker_b3528fb75fc04eee01f4ec90eefef35c = L.marker(
+                [5.53993, 102.89119],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_6a44cbabc7da0c1d2b0cb63cb3bf9cd1 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_cfc39bc8c2d8e77295f7957bcfbef130 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyOTg2PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBESUtFTkFMIFBBU1RJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gMTI3MzU8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_6a44cbabc7da0c1d2b0cb63cb3bf9cd1.setContent(i_frame_cfc39bc8c2d8e77295f7957bcfbef130);
+            
+        
+
+        marker_b3528fb75fc04eee01f4ec90eefef35c.bindPopup(popup_6a44cbabc7da0c1d2b0cb63cb3bf9cd1)
+        ;
+
+        
+    
+    
+            var marker_86d3a63e3417cbf672a1c8150ff9282a = L.marker(
+                [5.53964, 102.89159],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_844a9106c556ea7c4ce65a8c602d533c = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_b9aecb6b3246d03dd630a2ceee870ac3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyOTg3PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBESUtFTkFMIFBBU1RJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gMTI3MzE8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_844a9106c556ea7c4ce65a8c602d533c.setContent(i_frame_b9aecb6b3246d03dd630a2ceee870ac3);
+            
+        
+
+        marker_86d3a63e3417cbf672a1c8150ff9282a.bindPopup(popup_844a9106c556ea7c4ce65a8c602d533c)
+        ;
+
+        
+    
+    
+            var marker_f2d6fce1440f6fd95c50cde86424782e = L.marker(
+                [5.53797, 102.89067],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_b4eebede4da84d468ddc576e66621c89 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_5e1666657555ed8a12a9f3a1189ad880 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA5NjQ3PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBESUtFTkFMIFBBU1RJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNTk0Mjxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_b4eebede4da84d468ddc576e66621c89.setContent(i_frame_5e1666657555ed8a12a9f3a1189ad880);
+            
+        
+
+        marker_f2d6fce1440f6fd95c50cde86424782e.bindPopup(popup_b4eebede4da84d468ddc576e66621c89)
+        ;
+
+        
+    
+    
+            var marker_bbcb4b4fdfe41d4e6c8bb6839258fb1a = L.marker(
+                [5.53859, 102.89108],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_5c05d8774ff9dc317ff1472d70d277e9 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_611ebd0a9d9649c2b166974273312bc6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA5OTM3PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBESUtFTkFMIFBBU1RJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNTc2MTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_5c05d8774ff9dc317ff1472d70d277e9.setContent(i_frame_611ebd0a9d9649c2b166974273312bc6);
+            
+        
+
+        marker_bbcb4b4fdfe41d4e6c8bb6839258fb1a.bindPopup(popup_5c05d8774ff9dc317ff1472d70d277e9)
+        ;
+
+        
+    
+    
+            var marker_4621820ecd2385f1ef8a9d920e5f7e30 = L.marker(
+                [5.56386, 102.86091],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_d43a90ca6ffa5ff0d5faefc42de1e0c7 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_64175c94596fb1bfd7db5512f82c65de = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzMzM8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA4NDQ2PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_d43a90ca6ffa5ff0d5faefc42de1e0c7.setContent(i_frame_64175c94596fb1bfd7db5512f82c65de);
+            
+        
+
+        marker_4621820ecd2385f1ef8a9d920e5f7e30.bindPopup(popup_d43a90ca6ffa5ff0d5faefc42de1e0c7)
+        ;
+
+        
+    
+    
+            var marker_4437317d931f08879d2f1992dc26649e = L.marker(
+                [5.5685, 102.85811],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_987685e81dbaa5704ca1b9a371cb07ea = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_a1a1387e6c4e609b8ef2fe3749c96da6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzMzc8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA4NDc0PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_987685e81dbaa5704ca1b9a371cb07ea.setContent(i_frame_a1a1387e6c4e609b8ef2fe3749c96da6);
+            
+        
+
+        marker_4437317d931f08879d2f1992dc26649e.bindPopup(popup_987685e81dbaa5704ca1b9a371cb07ea)
+        ;
+
+        
+    
+    
+            var marker_4e0c33d87fd2169871306a537091916d = L.marker(
+                [5.56886, 102.85722],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_7e672484b143c86b8a4873c29d2e9f61 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_3610ffc59f6f03a2b1490278f7d74c69 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzMzY8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA4NzAxPGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_7e672484b143c86b8a4873c29d2e9f61.setContent(i_frame_3610ffc59f6f03a2b1490278f7d74c69);
+            
+        
+
+        marker_4e0c33d87fd2169871306a537091916d.bindPopup(popup_7e672484b143c86b8a4873c29d2e9f61)
+        ;
+
+        
+    
+    
+            var marker_9511e7fde212abbbd40db87698d5eb7e = L.marker(
+                [5.56764, 102.85875],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_cfe4e521aa073ab6c558f0bda611ab4f = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_8321ac1aa808e159d3f882a9f6448c37 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzMzQ8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA4NTIzPGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_cfe4e521aa073ab6c558f0bda611ab4f.setContent(i_frame_8321ac1aa808e159d3f882a9f6448c37);
+            
+        
+
+        marker_9511e7fde212abbbd40db87698d5eb7e.bindPopup(popup_cfe4e521aa073ab6c558f0bda611ab4f)
+        ;
+
+        
+    
+    
+            var marker_785d369679441f3d2388f9ae88161745 = L.marker(
+                [5.56806, 102.85904],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_ca0b3091054821c2f8b67508e4019251 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_b9dad39967b0e110fe08b5dbb29f47de = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzNDA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA4MDk0PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_ca0b3091054821c2f8b67508e4019251.setContent(i_frame_b9dad39967b0e110fe08b5dbb29f47de);
+            
+        
+
+        marker_785d369679441f3d2388f9ae88161745.bindPopup(popup_ca0b3091054821c2f8b67508e4019251)
+        ;
+
+        
+    
+    
+            var marker_ba7c633f196dcab0497325ff78b2b02b = L.marker(
+                [5.56736, 102.85792],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_01c83d7f2aec17cf8c9107b46f376e80 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_10e23a5fe0e9b2289eee507106cb008c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzNDE8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA4OTUyPGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_01c83d7f2aec17cf8c9107b46f376e80.setContent(i_frame_10e23a5fe0e9b2289eee507106cb008c);
+            
+        
+
+        marker_ba7c633f196dcab0497325ff78b2b02b.bindPopup(popup_01c83d7f2aec17cf8c9107b46f376e80)
+        ;
+
+        
+    
+    
+            var marker_0bfb91af3acc95e299115ef9482da6a0 = L.marker(
+                [5.56348, 102.86436],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_dd4d43953813c06e9d00aa39f24506a0 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_fe6bf147bdd126b39623c453d417bba1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzMjQ8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA4MTE4PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_dd4d43953813c06e9d00aa39f24506a0.setContent(i_frame_fe6bf147bdd126b39623c453d417bba1);
+            
+        
+
+        marker_0bfb91af3acc95e299115ef9482da6a0.bindPopup(popup_dd4d43953813c06e9d00aa39f24506a0)
+        ;
+
+        
+    
+    
+            var marker_5d7ec88c0ee619d33fc2004f467da3e9 = L.marker(
+                [5.56214, 102.86422],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_867e0835f77a24a74fdbe6f146da2e4e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_8766cdd36bf924abb5bcc73ea7790fc1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzMjg8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA4MTE4PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_867e0835f77a24a74fdbe6f146da2e4e.setContent(i_frame_8766cdd36bf924abb5bcc73ea7790fc1);
+            
+        
+
+        marker_5d7ec88c0ee619d33fc2004f467da3e9.bindPopup(popup_867e0835f77a24a74fdbe6f146da2e4e)
+        ;
+
+        
+    
+    
+            var marker_67b529b260c3778cdd4eb5d7aa831e92 = L.marker(
+                [5.54669, 102.88441],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_7c78c993a2c6b5dbd9a11d761804aa9a = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_1a67fcd335f9d12164c12be28387de6c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA2NzcwPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gODIwMDxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_7c78c993a2c6b5dbd9a11d761804aa9a.setContent(i_frame_1a67fcd335f9d12164c12be28387de6c);
+            
+        
+
+        marker_67b529b260c3778cdd4eb5d7aa831e92.bindPopup(popup_7c78c993a2c6b5dbd9a11d761804aa9a)
+        ;
+
+        
+    
+    
+            var marker_77ae2b375ae7958dad50b7c951ee2926 = L.marker(
+                [5.54562, 102.88521],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_6bf7620f73b148bc908ec2642ef77169 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_f68ecd993886498923624b10c31229e1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA3MDczMDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gUEVSU0VUVUpVQU4gVFVBTiBUQU5BSDxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDgwMDA8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_6bf7620f73b148bc908ec2642ef77169.setContent(i_frame_f68ecd993886498923624b10c31229e1);
+            
+        
+
+        marker_77ae2b375ae7958dad50b7c951ee2926.bindPopup(popup_6bf7620f73b148bc908ec2642ef77169)
+        ;
+
+        
+    
+    
+            var marker_7ee01676a9412a25f4e1329794e8b61c = L.marker(
+                [5.54528, 102.88278],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_e8cbb600628655c11540e4f1adf720c7 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_e91ec690cbbb2c3a3788b726cf57c823 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA2OTUzPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNzQ3ODxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_e8cbb600628655c11540e4f1adf720c7.setContent(i_frame_e91ec690cbbb2c3a3788b726cf57c823);
+            
+        
+
+        marker_7ee01676a9412a25f4e1329794e8b61c.bindPopup(popup_e8cbb600628655c11540e4f1adf720c7)
+        ;
+
+        
+    
+    
+            var marker_34a054a251e2cddbac2eed0878d9a7a8 = L.marker(
+                [5.54555, 102.88241],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_f58b00fad50bdcb3037e1ff31f5301ab = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_c8161b3a047da67276173ae820fe7549 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA3NzcyPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gODUzNzxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_f58b00fad50bdcb3037e1ff31f5301ab.setContent(i_frame_c8161b3a047da67276173ae820fe7549);
+            
+        
+
+        marker_34a054a251e2cddbac2eed0878d9a7a8.bindPopup(popup_f58b00fad50bdcb3037e1ff31f5301ab)
+        ;
+
+        
+    
+    
+            var marker_859b793ce3d817a4ca366e48608f0f7d = L.marker(
+                [5.53939, 102.89213],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_11fcfae950916f501b1c71d91ca12a7e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_74cb20da3da733e70187e4fcbce1cd60 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyOTg4PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQUk9TRVMgUEVOR0FMSUhBTjxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDEyNjU4PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_11fcfae950916f501b1c71d91ca12a7e.setContent(i_frame_74cb20da3da733e70187e4fcbce1cd60);
+            
+        
+
+        marker_859b793ce3d817a4ca366e48608f0f7d.bindPopup(popup_11fcfae950916f501b1c71d91ca12a7e)
+        ;
+
+        
+    
+    
+            var marker_26612fe43502730964ddba4795bc619a = L.marker(
+                [5.53895, 102.8928],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_69bdc1c30a61bff3c0a4c2f24cef6b58 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_3c99ed44404033d80b3b2112ac846632 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyOTg5PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQUk9TRVMgUEVOR0FMSUhBTjxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDEyNzAzPGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_69bdc1c30a61bff3c0a4c2f24cef6b58.setContent(i_frame_3c99ed44404033d80b3b2112ac846632);
+            
+        
+
+        marker_26612fe43502730964ddba4795bc619a.bindPopup(popup_69bdc1c30a61bff3c0a4c2f24cef6b58)
+        ;
+
+        
+    
+    
+            var marker_30829d78b5b3ba0bf246dcf644ef2460 = L.marker(
+                [4.933804, 103.346038],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_b0fbd62aa8cf11d076710cd3a0941899 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_ad2c00fdde49368b99a1e81b67432ebe = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNzE0IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDksNjM4PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_b0fbd62aa8cf11d076710cd3a0941899.setContent(i_frame_ad2c00fdde49368b99a1e81b67432ebe);
+            
+        
+
+        marker_30829d78b5b3ba0bf246dcf644ef2460.bindPopup(popup_b0fbd62aa8cf11d076710cd3a0941899)
+        ;
+
+        
+    
+    
+            var marker_871b911599f598e5405121d1db50d18c = L.marker(
+                [4.933073, 103.347505],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_2753414bc3f8cc4f9436df4ea544c6ae = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_dd26cc8163225362eeb953657c346b13 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1NTEwIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDg3NTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_2753414bc3f8cc4f9436df4ea544c6ae.setContent(i_frame_dd26cc8163225362eeb953657c346b13);
+            
+        
+
+        marker_871b911599f598e5405121d1db50d18c.bindPopup(popup_2753414bc3f8cc4f9436df4ea544c6ae)
+        ;
+
+        
+    
+    
+            var marker_e159687910a3320b7d5c335d7cf80ed5 = L.marker(
+                [4.933083, 103.347671],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_66a2a4aa36b472cbf1c839b24ed06cb3 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_5627241d5f6934a759d3df19871a2715 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1NTExIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDg3NTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_66a2a4aa36b472cbf1c839b24ed06cb3.setContent(i_frame_5627241d5f6934a759d3df19871a2715);
+            
+        
+
+        marker_e159687910a3320b7d5c335d7cf80ed5.bindPopup(popup_66a2a4aa36b472cbf1c839b24ed06cb3)
+        ;
+
+        
+    
+    
+            var marker_7e05853d98c58e9a86835625d6efb302 = L.marker(
+                [4.933371, 103.347818],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_393b1716e88ab6e106451cc918177c8d = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_3b44973c90e063c0fec302b2e95e068b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1NTEyIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDg0Mjxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_393b1716e88ab6e106451cc918177c8d.setContent(i_frame_3b44973c90e063c0fec302b2e95e068b);
+            
+        
+
+        marker_7e05853d98c58e9a86835625d6efb302.bindPopup(popup_393b1716e88ab6e106451cc918177c8d)
+        ;
+
+        
+    
+    
+            var marker_9d5f96224f00762886b2a361b6c25e89 = L.marker(
+                [4.933572, 103.347487],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_a58282ee04b8e0f29a1e830c4a6b2a62 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_d4f0a03119a1d5117978ac330f888726 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MTgxNCA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA5NDQ8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_a58282ee04b8e0f29a1e830c4a6b2a62.setContent(i_frame_d4f0a03119a1d5117978ac330f888726);
+            
+        
+
+        marker_9d5f96224f00762886b2a361b6c25e89.bindPopup(popup_a58282ee04b8e0f29a1e830c4a6b2a62)
+        ;
+
+        
+    
+    
+            var marker_9f68f9d0769a0ac9621779b01ed6c373 = L.marker(
+                [4.933475, 103.34608],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_94c2a4baced6db201ff7f5eb1ea2b31d = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_863ce2517492007fa19da75a736bf42d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA0MDgxPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBESUtFTkFMIFBBU1RJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNCwwNjA8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_94c2a4baced6db201ff7f5eb1ea2b31d.setContent(i_frame_863ce2517492007fa19da75a736bf42d);
+            
+        
+
+        marker_9f68f9d0769a0ac9621779b01ed6c373.bindPopup(popup_94c2a4baced6db201ff7f5eb1ea2b31d)
+        ;
+
+        
+    
+    
+            var marker_85ff8594adbbc30117706c1161a0c6b3 = L.marker(
+                [4.933863, 103.346805],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_fe80382a2da576a32904657d9737d0e3 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_2e2df84f11b09035ab7cadc2b9696560 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA0MDgyPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBESUtFTkFMIFBBU1Q8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiBuYW48YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_fe80382a2da576a32904657d9737d0e3.setContent(i_frame_2e2df84f11b09035ab7cadc2b9696560);
+            
+        
+
+        marker_85ff8594adbbc30117706c1161a0c6b3.bindPopup(popup_fe80382a2da576a32904657d9737d0e3)
+        ;
+
+        
+    
+    
+            var marker_e5d8f74fa18ae5220117ad450d20635e = L.marker(
+                [4.933331, 103.347304],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_f6c7d78e9dd7b370f08f5c9fdb6087fc = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_f0a69c65970ebd899c1d5775990c43ee = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MTgxMyA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IFBST1NFUyBQRU5HQUxJSEFOPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gOTQ1PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_f6c7d78e9dd7b370f08f5c9fdb6087fc.setContent(i_frame_f0a69c65970ebd899c1d5775990c43ee);
+            
+        
+
+        marker_e5d8f74fa18ae5220117ad450d20635e.bindPopup(popup_f6c7d78e9dd7b370f08f5c9fdb6087fc)
+        ;
+
+        
+    
+    
+            var marker_c87e6e11b08a081d7b8cb7a5cf2cec59 = L.marker(
+                [4.933328, 103.346539],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_eeca746c6e5f437bd1d563e355097f2f = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_efa6c09a1eba860b03ec347ec411981d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNzE2IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gUFJPU0VTIFBFTkdBTElIQU48YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA5LDg5MTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_eeca746c6e5f437bd1d563e355097f2f.setContent(i_frame_efa6c09a1eba860b03ec347ec411981d);
+            
+        
+
+        marker_c87e6e11b08a081d7b8cb7a5cf2cec59.bindPopup(popup_eeca746c6e5f437bd1d563e355097f2f)
+        ;
+
+        
+    
+    
+            var marker_847c8b1eedf50a72ad8927292dd685f1 = L.marker(
+                [4.93933, 103.342221],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_1d535cb4dc76ed62b47bb9e457af0804 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_fd6f1a3ac855f497bbf2a59dc65284d3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxMzYwIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDE2LDUyMzxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_1d535cb4dc76ed62b47bb9e457af0804.setContent(i_frame_fd6f1a3ac855f497bbf2a59dc65284d3);
+            
+        
+
+        marker_847c8b1eedf50a72ad8927292dd685f1.bindPopup(popup_1d535cb4dc76ed62b47bb9e457af0804)
+        ;
+
+        
+    
+    
+            var marker_6073e84e339dd556a6ec4d2c0f2c10ff = L.marker(
+                [4.938265, 103.343299],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_9f211adf1bb9bc60f410c3581ff5c765 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_b4aefccd78aef4ef0af8ecb4be425d3d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxMzYyIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDEwLDU3ODxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_9f211adf1bb9bc60f410c3581ff5c765.setContent(i_frame_b4aefccd78aef4ef0af8ecb4be425d3d);
+            
+        
+
+        marker_6073e84e339dd556a6ec4d2c0f2c10ff.bindPopup(popup_9f211adf1bb9bc60f410c3581ff5c765)
+        ;
+
+        
+    
+    
+            var marker_87cf301d815b84741de13d2da1562b10 = L.marker(
+                [4.938689, 103.344368],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_f8b2e1f916ac3d005840ecd42bc7d177 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_5f91284f036e8104b6309c3343392949 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MDk4MSA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA3MDA8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_f8b2e1f916ac3d005840ecd42bc7d177.setContent(i_frame_5f91284f036e8104b6309c3343392949);
+            
+        
+
+        marker_87cf301d815b84741de13d2da1562b10.bindPopup(popup_f8b2e1f916ac3d005840ecd42bc7d177)
+        ;
+
+        
+    
+    
+            var marker_fff08b87288ee0e91552abd187e16049 = L.marker(
+                [4.935341, 103.344129],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_3ef44a78968e81ce3e3dd8c5ab825411 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_83d4d00623cce866406bc2ad7077cb40 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjAyOCA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA3MDQ8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_3ef44a78968e81ce3e3dd8c5ab825411.setContent(i_frame_83d4d00623cce866406bc2ad7077cb40);
+            
+        
+
+        marker_fff08b87288ee0e91552abd187e16049.bindPopup(popup_3ef44a78968e81ce3e3dd8c5ab825411)
+        ;
+
+        
+    
+    
+            var marker_87a8bb4e9e8320eb0fd560585dfda290 = L.marker(
+                [4.935506, 103.344259],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_480e56571f83cf7b40003bb9ce04da8a = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_810bf83e908d78adc249513b50442689 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjAyOSA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA4MjE8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_480e56571f83cf7b40003bb9ce04da8a.setContent(i_frame_810bf83e908d78adc249513b50442689);
+            
+        
+
+        marker_87a8bb4e9e8320eb0fd560585dfda290.bindPopup(popup_480e56571f83cf7b40003bb9ce04da8a)
+        ;
+
+        
+    
+    
+            var marker_80ef99d4ce238aa036a6f76eef63f51f = L.marker(
+                [4.935772, 103.344674],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_ce76846e012dfc59689cbe642ab3b468 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_7c551f1fac1a65c9ce2d06572a0232a2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjAzMSA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA4MjE8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_ce76846e012dfc59689cbe642ab3b468.setContent(i_frame_7c551f1fac1a65c9ce2d06572a0232a2);
+            
+        
+
+        marker_80ef99d4ce238aa036a6f76eef63f51f.bindPopup(popup_ce76846e012dfc59689cbe642ab3b468)
+        ;
+
+        
+    
+    
+            var marker_472e0cb3e86dc50b4924ffc75ca77f0d = L.marker(
+                [4.935585, 103.344792],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_1b3aa8e6e6e6849b1436feee60446998 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_9369b06c6150546182fc6e28f6d5a242 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjAzNCA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA2MzI8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_1b3aa8e6e6e6849b1436feee60446998.setContent(i_frame_9369b06c6150546182fc6e28f6d5a242);
+            
+        
+
+        marker_472e0cb3e86dc50b4924ffc75ca77f0d.bindPopup(popup_1b3aa8e6e6e6849b1436feee60446998)
+        ;
+
+        
+    
+    
+            var marker_75def71795689d3e0b0834a7a6ccb6fd = L.marker(
+                [4.93545, 103.344657],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_628d5d65fccff81ea2dcbae95be922ed = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_a83ad6159609146acba3160125d59b12 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjAzNSA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA2Mzg8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_628d5d65fccff81ea2dcbae95be922ed.setContent(i_frame_a83ad6159609146acba3160125d59b12);
+            
+        
+
+        marker_75def71795689d3e0b0834a7a6ccb6fd.bindPopup(popup_628d5d65fccff81ea2dcbae95be922ed)
+        ;
+
+        
+    
+    
+            var marker_6216ce0f2a4d13ee8d479dce129b042e = L.marker(
+                [4.935249, 103.344485],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_e2838ce79dee1f174e1e6291b715f064 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_95835122310faeb5d1ca6dbb5f71b139 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjAzNiA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA3ODY8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_e2838ce79dee1f174e1e6291b715f064.setContent(i_frame_95835122310faeb5d1ca6dbb5f71b139);
+            
+        
+
+        marker_6216ce0f2a4d13ee8d479dce129b042e.bindPopup(popup_e2838ce79dee1f174e1e6291b715f064)
+        ;
+
+        
+    
+    
+            var marker_a45acc7bb8655b366cd3a5a99e20e117 = L.marker(
+                [4.935136, 103.344267],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_e50ec723292039fad58e1ed31452b07e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_fd74922896171a05b59349c5d86c35f8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjAzNyA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVDxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDgxMzxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_e50ec723292039fad58e1ed31452b07e.setContent(i_frame_fd74922896171a05b59349c5d86c35f8);
+            
+        
+
+        marker_a45acc7bb8655b366cd3a5a99e20e117.bindPopup(popup_e50ec723292039fad58e1ed31452b07e)
+        ;
+
+        
+    
+    
+            var marker_04514cb60d976bfe3f7e1f4538f9d97d = L.marker(
+                [4.93618, 103.345389],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_356031730608b52cf9d5f32c54cf4085 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_280c8a1903a0568c9d21e1ea0b4520f0 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MDYxNiA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVDxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDQsMDUwPGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_356031730608b52cf9d5f32c54cf4085.setContent(i_frame_280c8a1903a0568c9d21e1ea0b4520f0);
+            
+        
+
+        marker_04514cb60d976bfe3f7e1f4538f9d97d.bindPopup(popup_356031730608b52cf9d5f32c54cf4085)
+        ;
+
+        
+    
+    
+            var marker_d15bc024b9c5e79576593091703b5f09 = L.marker(
+                [4.935819, 103.345008],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_7e6df7535e16be21b6cc125c3661eec5 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_21e963356a1c38523d2bf06bcc79bec7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjAzMzxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gUFJPU0VTIFBFTkdBTElIQU48YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA1NzU8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_7e6df7535e16be21b6cc125c3661eec5.setContent(i_frame_21e963356a1c38523d2bf06bcc79bec7);
+            
+        
+
+        marker_d15bc024b9c5e79576593091703b5f09.bindPopup(popup_7e6df7535e16be21b6cc125c3661eec5)
+        ;
+
+        
+    
+    
+            var marker_6eaf26142d4fa93d8f104a33a7e0055f = L.marker(
+                [4.943149, 103.340049],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_3307677b39434665c567dd14374b2941 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_787c55646f0478bb564cd37ef50dd460 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxMzUzIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDE4LDg0Njxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_3307677b39434665c567dd14374b2941.setContent(i_frame_787c55646f0478bb564cd37ef50dd460);
+            
+        
+
+        marker_6eaf26142d4fa93d8f104a33a7e0055f.bindPopup(popup_3307677b39434665c567dd14374b2941)
+        ;
+
+        
+    
+    
+            var marker_ba93d9888865b3495199b59c3c44e8ec = L.marker(
+                [4.944088, 103.339662],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_3f00ef12bf1bd7589adfdd0fb25916db = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_56bf88a6c0e758e7a56a0d01fb9e0734 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxMzUxIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDEyLDg1Mzxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_3f00ef12bf1bd7589adfdd0fb25916db.setContent(i_frame_56bf88a6c0e758e7a56a0d01fb9e0734);
+            
+        
+
+        marker_ba93d9888865b3495199b59c3c44e8ec.bindPopup(popup_3f00ef12bf1bd7589adfdd0fb25916db)
+        ;
+
+        
+    
+    
+            var marker_bc2bf71e15a76d58b6d9a0de2477360e = L.marker(
+                [4.944415, 103.339301],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_46e810a8db7d7ba433d3993265550370 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_68f79568242de5aaf80a31e56e811b4c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNTczIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDcsNTYwPGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_46e810a8db7d7ba433d3993265550370.setContent(i_frame_68f79568242de5aaf80a31e56e811b4c);
+            
+        
+
+        marker_bc2bf71e15a76d58b6d9a0de2477360e.bindPopup(popup_46e810a8db7d7ba433d3993265550370)
+        ;
+
+        
+    
+    
+            var marker_7749f60e5a2cca88acd0b3ac4855ab15 = L.marker(
+                [4.944749, 103.339131],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_59c02fee5d0a9deddc3056d49764c0bb = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_007ca3c4bf4cfea94248bbf964ab1e81 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNTcyIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDgsMzEyPGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_59c02fee5d0a9deddc3056d49764c0bb.setContent(i_frame_007ca3c4bf4cfea94248bbf964ab1e81);
+            
+        
+
+        marker_7749f60e5a2cca88acd0b3ac4855ab15.bindPopup(popup_59c02fee5d0a9deddc3056d49764c0bb)
+        ;
+
+        
+    
+    
+            var marker_fd312722c320152db20223bc3e17b8bc = L.marker(
+                [4.945002, 103.338837],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_234f8a4f098f1ef1ec9d58f78413e199 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_e135a5abca4690af2a45ce7437f20733 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNTcxIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDcsMTQ3PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_234f8a4f098f1ef1ec9d58f78413e199.setContent(i_frame_e135a5abca4690af2a45ce7437f20733);
+            
+        
+
+        marker_fd312722c320152db20223bc3e17b8bc.bindPopup(popup_234f8a4f098f1ef1ec9d58f78413e199)
+        ;
+
+        
+    
+    
+            var marker_462937b87b8d3a708ba0a55170e43838 = L.marker(
+                [4.945236, 103.338579],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_ba64909d4b09368d5dcb52ed31c4b49e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_34d35329b03b1d61c640190bd2299a8b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNTcwIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDYsNDgzPGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_ba64909d4b09368d5dcb52ed31c4b49e.setContent(i_frame_34d35329b03b1d61c640190bd2299a8b);
+            
+        
+
+        marker_462937b87b8d3a708ba0a55170e43838.bindPopup(popup_ba64909d4b09368d5dcb52ed31c4b49e)
+        ;
+
+        
+    
+    
+            var marker_08b80fa31751545a97e1161490ad0188 = L.marker(
+                [4.945966, 103.33801],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_495c6566e833b08a992a6dd2054c2836 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_f6834d6e11c7484d28c283ff1a102d55 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNTY4IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDE3LDIyMzxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_495c6566e833b08a992a6dd2054c2836.setContent(i_frame_f6834d6e11c7484d28c283ff1a102d55);
+            
+        
+
+        marker_08b80fa31751545a97e1161490ad0188.bindPopup(popup_495c6566e833b08a992a6dd2054c2836)
+        ;
+
+        
+    
+    
+            var marker_5645a8f27ca0f120c710f131283b8415 = L.marker(
+                [4.932532, 103.346855],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_a4daf1c94b8fd3d242e96f7977ff40b5 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_f14af9856865bd797804fcf1add5570a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1NTA2IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDg3Njxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_a4daf1c94b8fd3d242e96f7977ff40b5.setContent(i_frame_f14af9856865bd797804fcf1add5570a);
+            
+        
+
+        marker_5645a8f27ca0f120c710f131283b8415.bindPopup(popup_a4daf1c94b8fd3d242e96f7977ff40b5)
+        ;
+
+        
+    
+    
+            var marker_024b5d68b11509e809bcd765becdab26 = L.marker(
+                [4.93268, 103.346996],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_f9b1f532102be861d7ffeb3660eb5f57 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_3b31e5aa45d3c6776a7f347d6275d0b9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1NTA3IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDg3Njxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_f9b1f532102be861d7ffeb3660eb5f57.setContent(i_frame_3b31e5aa45d3c6776a7f347d6275d0b9);
+            
+        
+
+        marker_024b5d68b11509e809bcd765becdab26.bindPopup(popup_f9b1f532102be861d7ffeb3660eb5f57)
+        ;
+
+        
+    
+    
+            var marker_bba3471045298725500cf71d95bd0ce1 = L.marker(
+                [4.932792, 103.347166],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_af2042271af239e60c4ba49b48828669 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_65871ded3185dbe5dca9dcf8fc4eab78 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1NTA4IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDg3Njxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_af2042271af239e60c4ba49b48828669.setContent(i_frame_65871ded3185dbe5dca9dcf8fc4eab78);
+            
+        
+
+        marker_bba3471045298725500cf71d95bd0ce1.bindPopup(popup_af2042271af239e60c4ba49b48828669)
+        ;
+
+        
+    
+    
+            var marker_bef9fa6296a61ede0afe4e0312961e3a = L.marker(
+                [4.932908, 103.347314],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_5d3c53c19e51d76eb66ee39d56190616 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_3abeb7d47d3765026f2d8b3901d56b36 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1NTA5IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDg3Njxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_5d3c53c19e51d76eb66ee39d56190616.setContent(i_frame_3abeb7d47d3765026f2d8b3901d56b36);
+            
+        
+
+        marker_bef9fa6296a61ede0afe4e0312961e3a.bindPopup(popup_5d3c53c19e51d76eb66ee39d56190616)
+        ;
+
+        
+    
+    
+            var marker_33072e3c6fc8628b5345e0c38318c76e = L.marker(
+                [4.931889, 103.347726],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_7338e6acf38cf58838b071976a8bd1bc = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_2e0fc669eb4ce99fa17974d9de45f5ba = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzNzU2IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDcsNjQxPGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_7338e6acf38cf58838b071976a8bd1bc.setContent(i_frame_2e0fc669eb4ce99fa17974d9de45f5ba);
+            
+        
+
+        marker_33072e3c6fc8628b5345e0c38318c76e.bindPopup(popup_7338e6acf38cf58838b071976a8bd1bc)
+        ;
+
+        
+    
+    
+            var marker_e57f8260fd61734a1d8c855ba68c1b16 = L.marker(
+                [4.9424, 103.339576],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_9ed58d63be1246dfaf3945fb683d4c19 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_96ff2a188a9e04d6eab8aa89330437bc = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjA2OCA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiAxLDQ0NTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_9ed58d63be1246dfaf3945fb683d4c19.setContent(i_frame_96ff2a188a9e04d6eab8aa89330437bc);
+            
+        
+
+        marker_e57f8260fd61734a1d8c855ba68c1b16.bindPopup(popup_9ed58d63be1246dfaf3945fb683d4c19)
+        ;
+
+        
+    
+    
+            var marker_98c1ed729a2040091fd23dd16610f366 = L.marker(
+                [4.942458, 103.339983],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_ff448717e050cfe8c20872e74a9bb8cd = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_c24a77866e75b567ca6ac8e67bc364b3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjA2OSA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiAxLDQ0NTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_ff448717e050cfe8c20872e74a9bb8cd.setContent(i_frame_c24a77866e75b567ca6ac8e67bc364b3);
+            
+        
+
+        marker_98c1ed729a2040091fd23dd16610f366.bindPopup(popup_ff448717e050cfe8c20872e74a9bb8cd)
+        ;
+
+        
+    
+    
+            var marker_cb7ef2117db8b15dce60eae247097003 = L.marker(
+                [4.942561, 103.340278],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_e796ac8610961af36577f91e58d6d03e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_6d9b6766730204bfe9c2b6eb5d6ea44f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjA3MCA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiAxLDQ0NTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_e796ac8610961af36577f91e58d6d03e.setContent(i_frame_6d9b6766730204bfe9c2b6eb5d6ea44f);
+            
+        
+
+        marker_cb7ef2117db8b15dce60eae247097003.bindPopup(popup_e796ac8610961af36577f91e58d6d03e)
+        ;
+
+        
+    
+    
+            var marker_f75c91f00ca768291b7102526b8a3283 = L.marker(
+                [4.942476, 103.341337],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_b1734bae7206c18acd62de78a6e4da88 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_041f0cfed07361744f488cab06c3e48f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjA3MyA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiAxLDQ0NDxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_b1734bae7206c18acd62de78a6e4da88.setContent(i_frame_041f0cfed07361744f488cab06c3e48f);
+            
+        
+
+        marker_f75c91f00ca768291b7102526b8a3283.bindPopup(popup_b1734bae7206c18acd62de78a6e4da88)
+        ;
+
+        
+    
+    
+            var marker_c9346155f79561109be9526e4a03dc28 = L.marker(
+                [4.942467, 103.340899],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_6fda993fb7c856f8835cc07f0eab3dda = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_4c9a652abb1dfbae7b342072b68e5434 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjA3NCA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiAxLDQ0NTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_6fda993fb7c856f8835cc07f0eab3dda.setContent(i_frame_4c9a652abb1dfbae7b342072b68e5434);
+            
+        
+
+        marker_c9346155f79561109be9526e4a03dc28.bindPopup(popup_6fda993fb7c856f8835cc07f0eab3dda)
+        ;
+
+        
+    
+    
+            var marker_0b00ed7aba9aeec3392e0677ea20335a = L.marker(
+                [4.942355, 103.34047],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_65199717cac11838d7814eaca148e8df = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_1cae6bb98ab091122f7f26341213021f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjA3NSA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiAxLDQ0Mzxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_65199717cac11838d7814eaca148e8df.setContent(i_frame_1cae6bb98ab091122f7f26341213021f);
+            
+        
+
+        marker_0b00ed7aba9aeec3392e0677ea20335a.bindPopup(popup_65199717cac11838d7814eaca148e8df)
+        ;
+
+        
+    
+    
+            var marker_68b9c1e081f22947e362c6c8e2c993e5 = L.marker(
+                [4.942114, 103.339308],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_c688c83bee8bba79637f2be778306cda = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_306cb049c225d187f0bb3a01a850b3cf = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNjgzIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDMsODA0PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_c688c83bee8bba79637f2be778306cda.setContent(i_frame_306cb049c225d187f0bb3a01a850b3cf);
+            
+        
+
+        marker_68b9c1e081f22947e362c6c8e2c993e5.bindPopup(popup_c688c83bee8bba79637f2be778306cda)
+        ;
+
+        
+    
+    
+            var marker_42f91e2a843af0c98869d5ebf7417ae2 = L.marker(
+                [4.942887, 103.338999],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_aabae0ee87bd5f8e5136178d4aad1f57 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_9a799a3ca995c6cda7026dc9bade0727 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNjgyIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDMsNTczPGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_aabae0ee87bd5f8e5136178d4aad1f57.setContent(i_frame_9a799a3ca995c6cda7026dc9bade0727);
+            
+        
+
+        marker_42f91e2a843af0c98869d5ebf7417ae2.bindPopup(popup_aabae0ee87bd5f8e5136178d4aad1f57)
+        ;
+
+        
+    
+    
+            var marker_9aa583dcb602bebe96c7f89af516cc23 = L.marker(
+                [4.942731, 103.340649],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_c1c771b64ae23e4ecb1b12ef2617dd84 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_7c9d65dbe370e24b662d2ace624810d2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjA3MSA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IFBST1NFUyBQRU5HQUxJSEFOPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gMSw0NDU8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_c1c771b64ae23e4ecb1b12ef2617dd84.setContent(i_frame_7c9d65dbe370e24b662d2ace624810d2);
+            
+        
+
+        marker_9aa583dcb602bebe96c7f89af516cc23.bindPopup(popup_c1c771b64ae23e4ecb1b12ef2617dd84)
+        ;
+
+        
+    
+    
+            var marker_9224092dd0f008270d3f8c548233871c = L.marker(
+                [4.94278, 103.341194],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_f08ed4a78a80488c2793368208efdd70 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_dbd0b1c920a2355a60d0eb04b50f73ce = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjA3MiA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IFBST1NFUyBQRU5HQUxJSEFOPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gMSw0NDU8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_f08ed4a78a80488c2793368208efdd70.setContent(i_frame_dbd0b1c920a2355a60d0eb04b50f73ce);
+            
+        
+
+        marker_9224092dd0f008270d3f8c548233871c.bindPopup(popup_f08ed4a78a80488c2793368208efdd70)
+        ;
+
+        
+    
+    
+            var marker_6497318b0f43bce751c05404f2a664a8 = L.marker(
+                [4.942175, 103.340025],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_72150bffbd59e7d26f74de5225b99ab9 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_4232adce3a8398edc81cd07231bc106f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjA3NiA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IFBST1NFUyBQRU5HQUxJSEFOPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gMSw0NDQ8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_72150bffbd59e7d26f74de5225b99ab9.setContent(i_frame_4232adce3a8398edc81cd07231bc106f);
+            
+        
+
+        marker_6497318b0f43bce751c05404f2a664a8.bindPopup(popup_72150bffbd59e7d26f74de5225b99ab9)
+        ;
+
+        
+    
+    
+            var marker_61a045981ce379ec548c3ce2094e3d72 = L.marker(
+                [4.942107, 103.339667],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_001c59b1ee2b6aac67807b8861c42717 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_20a569cdf9d6b5d891f66dc89522210d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjA3NyA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IFBST1NFUyBQRU5HQUxJSEFOPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gMSw0NDU8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_001c59b1ee2b6aac67807b8861c42717.setContent(i_frame_20a569cdf9d6b5d891f66dc89522210d);
+            
+        
+
+        marker_61a045981ce379ec548c3ce2094e3d72.bindPopup(popup_001c59b1ee2b6aac67807b8861c42717)
+        ;
+
+        
+    
+    
+            var marker_6453ff0bf3fef8f70952f9b4fb5c8e0f = L.marker(
+                [4.944025, 103.335745],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_d26c7e8eeb2b5e221a137452bb8fb56b = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_a19404c8cc7f314ca432a4c65285f707 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MTMxNSA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IERJS0VOQUwgUEFTVEk8YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA1ODU8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_d26c7e8eeb2b5e221a137452bb8fb56b.setContent(i_frame_a19404c8cc7f314ca432a4c65285f707);
+            
+        
+
+        marker_6453ff0bf3fef8f70952f9b4fb5c8e0f.bindPopup(popup_d26c7e8eeb2b5e221a137452bb8fb56b)
+        ;
+
+        
+    
+    
+            var marker_86d5d1147e4b18e88c6ee05b3fb70cef = L.marker(
+                [4.950489, 103.340477],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_119701b8f22ceba246a1d2af0a5b8a14 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_dfdc066ab6a34321bc3b37b5d824f199 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxMzc4IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDksMzY4PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_119701b8f22ceba246a1d2af0a5b8a14.setContent(i_frame_dfdc066ab6a34321bc3b37b5d824f199);
+            
+        
+
+        marker_86d5d1147e4b18e88c6ee05b3fb70cef.bindPopup(popup_119701b8f22ceba246a1d2af0a5b8a14)
+        ;
+
+        
+    
+    
+            var marker_a0816419d148611486c6f2e8f83e65a2 = L.marker(
+                [4.93956, 103.350243],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_5417f35bcd4d1846480eea9c746afd4c = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_653b44f45f13d71b6813ec34e103084b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzMjQgPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBESUtFTkFMIFBBU1RJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gMTAsMTU0PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_5417f35bcd4d1846480eea9c746afd4c.setContent(i_frame_653b44f45f13d71b6813ec34e103084b);
+            
+        
+
+        marker_a0816419d148611486c6f2e8f83e65a2.bindPopup(popup_5417f35bcd4d1846480eea9c746afd4c)
+        ;
+
+        
+    
+    
+            var marker_9933ec434637725efb42bccdcf6a45bf = L.marker(
+                [4.936552, 103.344409],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_56749f2133230682728beb7049c3a93e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_0e6b4af9832eaa0dbdd0f5079839b4b5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MDc3IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDYxMjxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_56749f2133230682728beb7049c3a93e.setContent(i_frame_0e6b4af9832eaa0dbdd0f5079839b4b5);
+            
+        
+
+        marker_9933ec434637725efb42bccdcf6a45bf.bindPopup(popup_56749f2133230682728beb7049c3a93e)
+        ;
+
+        
+    
+    
+            var marker_25053f6ef2d5d577ce4aa6bc727dff09 = L.marker(
+                [4.936447, 103.344309],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_c42173dd4d3f479eceb6af99369bd279 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_cc6ae2f1e543d011a95710c87084cc5c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MDc4IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDYxMjxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_c42173dd4d3f479eceb6af99369bd279.setContent(i_frame_cc6ae2f1e543d011a95710c87084cc5c);
+            
+        
+
+        marker_25053f6ef2d5d577ce4aa6bc727dff09.bindPopup(popup_c42173dd4d3f479eceb6af99369bd279)
+        ;
+
+        
+    
+    
+            var marker_6e092db86a3fb6f943e6564d5d084bf9 = L.marker(
+                [4.936341, 103.344188],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_2a768afa7e826d86460dd427944c0a68 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_9e4ac916a7ee905ac9183df441294bd4 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MDc5IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDYxMjxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_2a768afa7e826d86460dd427944c0a68.setContent(i_frame_9e4ac916a7ee905ac9183df441294bd4);
+            
+        
+
+        marker_6e092db86a3fb6f943e6564d5d084bf9.bindPopup(popup_2a768afa7e826d86460dd427944c0a68)
+        ;
+
+        
+    
+    
+            var marker_f3b7a8a4b601c7dae50bfc97fef61c7a = L.marker(
+                [4.936237, 103.344077],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_1879c80980b6b2ba70995666ea2bd4bf = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_4501974bc11a59760bd7bcbc9fc2cb11 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MDgwIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gRElLRU5BTCBQQVNUSTxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IDYxMjxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_1879c80980b6b2ba70995666ea2bd4bf.setContent(i_frame_4501974bc11a59760bd7bcbc9fc2cb11);
+            
+        
+
+        marker_f3b7a8a4b601c7dae50bfc97fef61c7a.bindPopup(popup_1879c80980b6b2ba70995666ea2bd4bf)
+        ;
+
+        
+    
+    
+            var marker_d8c79819a95608e56ccb4e8efc00fc53 = L.marker(
+                [4.934433, 103.345717],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_ccc125d359c677cf2991ae8e9218e764 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_bfc744374009b4581f7e22b8eb13a05d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MDk4NyA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IFBST1NFUyBQRU5HQUxJSEFOPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNSwzMDY8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_ccc125d359c677cf2991ae8e9218e764.setContent(i_frame_bfc744374009b4581f7e22b8eb13a05d);
+            
+        
+
+        marker_d8c79819a95608e56ccb4e8efc00fc53.bindPopup(popup_ccc125d359c677cf2991ae8e9218e764)
+        ;
+
+        
+    
+    
+            var marker_134e34f5dc4dffe7f1a0c8df3fbbbbce = L.marker(
+                [4.936829, 103.344169],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_b61902aba35640097d60360409fe87c0 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_f24d2896957832d3f49b65cf267efa6c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNzA3IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gUFJPU0VTIFBFTkdBTElIQU48YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA3LDY5ODxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_b61902aba35640097d60360409fe87c0.setContent(i_frame_f24d2896957832d3f49b65cf267efa6c);
+            
+        
+
+        marker_134e34f5dc4dffe7f1a0c8df3fbbbbce.bindPopup(popup_b61902aba35640097d60360409fe87c0)
+        ;
+
+        
+    
+    
+            var marker_a1f323231e2bb911413f69feedb7e911 = L.marker(
+                [4.937084, 103.343989],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_5f2e9ca98cd5b280670e90e2a61bc1ea = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_3684acc15e7e6aa7c19577f61233724f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAzMjk3IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gUFJPU0VTIFBFTkdBTElIQU48YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA3LDM5OTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_5f2e9ca98cd5b280670e90e2a61bc1ea.setContent(i_frame_3684acc15e7e6aa7c19577f61233724f);
+            
+        
+
+        marker_a1f323231e2bb911413f69feedb7e911.bindPopup(popup_5f2e9ca98cd5b280670e90e2a61bc1ea)
+        ;
+
+        
+    
+    
+            var marker_0762e8564f747bea4f9f4ecba49811ca = L.marker(
+                [4.940333, 103.341052],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_e9c52ee2e4472abca23d525e90d28b90 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_58198a28b3affee80bcff8962ce3a7c3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjE0Mzxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gUFJPU0VTIFBFTkdBTElIQU48YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiAxLDg4NTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_e9c52ee2e4472abca23d525e90d28b90.setContent(i_frame_58198a28b3affee80bcff8962ce3a7c3);
+            
+        
+
+        marker_0762e8564f747bea4f9f4ecba49811ca.bindPopup(popup_e9c52ee2e4472abca23d525e90d28b90)
+        ;
+
+        
+    
+    
+            var marker_0ed30409f286dc8137cc1873256dc8a7 = L.marker(
+                [4.940464, 103.341312],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_23c2970823d1365107ccc32e43018a49 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_821545fcf69c6358744d0f3ec6172761 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjE0NDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gUFJPU0VTIFBFTkdBTElIQU48YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiAxLDg4NTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_23c2970823d1365107ccc32e43018a49.setContent(i_frame_821545fcf69c6358744d0f3ec6172761);
+            
+        
+
+        marker_0ed30409f286dc8137cc1873256dc8a7.bindPopup(popup_23c2970823d1365107ccc32e43018a49)
+        ;
+
+        
+    
+    
+            var marker_a247e406f1667c6d77208ea729ff96c2 = L.marker(
+                [4.940593, 103.341554],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_9c6b5aa6edbbbdb78529eaca3764df93 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_cff347376a45055690b7bcc868cdf5d8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjE0NSA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IFBST1NFUyBQRU5HQUxJSEFOPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gMSw4ODU8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_9c6b5aa6edbbbdb78529eaca3764df93.setContent(i_frame_cff347376a45055690b7bcc868cdf5d8);
+            
+        
+
+        marker_a247e406f1667c6d77208ea729ff96c2.bindPopup(popup_9c6b5aa6edbbbdb78529eaca3764df93)
+        ;
+
+        
+    
+    
+            var marker_0def285dee87577254f3b41a8554fc85 = L.marker(
+                [4.940889, 103.342188],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_14dd8db90278f787009e50ce98b89789 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_78e93de4fa8418884438c7ef96c26038 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjE0NyA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IFBST1NFUyBQRU5HQUxJSEFOPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gMSw4ODU8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_14dd8db90278f787009e50ce98b89789.setContent(i_frame_78e93de4fa8418884438c7ef96c26038);
+            
+        
+
+        marker_0def285dee87577254f3b41a8554fc85.bindPopup(popup_14dd8db90278f787009e50ce98b89789)
+        ;
+
+        
+    
+    
+            var marker_631ac715e18784ca70f02bf2987f5595 = L.marker(
+                [4.934941, 103.345379],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_4273a36ddac713f6ec0e8af997cd9add = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_94036810480c2f7bcf703bab34950cee = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCA1MjM4MCA8YnI+CiAgICAgICAgPHN0cm9uZz5TdGF0dXM6PC9zdHJvbmc+IFBST1NFUyBQRU5HQUxJSEFOPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNCwwNDE8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_4273a36ddac713f6ec0e8af997cd9add.setContent(i_frame_94036810480c2f7bcf703bab34950cee);
+            
+        
+
+        marker_631ac715e18784ca70f02bf2987f5595.bindPopup(popup_4273a36ddac713f6ec0e8af997cd9add)
+        ;
+
+        
+    
+    
+            var marker_f00003b8f4863e458f6dae4e6be4fd6a = L.marker(
+                [4.941927, 103.340709],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_c8bad1e95d4b56533417112f91055655 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_c489b1882f45dc4e8c41be7f199d66f8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxMzU1IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gUFJPU0VTIFBFTkdBTElIQU48YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA5LDg5MTxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_c8bad1e95d4b56533417112f91055655.setContent(i_frame_c489b1882f45dc4e8c41be7f199d66f8);
+            
+        
+
+        marker_f00003b8f4863e458f6dae4e6be4fd6a.bindPopup(popup_c8bad1e95d4b56533417112f91055655)
+        ;
+
+        
+    
+    
+            var marker_a2218efb1c2e42e60e1105fe92674f1e = L.marker(
+                [4.94155, 103.340891],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_f2379e9b3dd0440d53ac6cce60291cfd = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_03bd247d9039d2cb142490e7b8386e52 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxMzU2IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gUFJPU0VTIFBFTkdBTElIQU48YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiAxMCwxNTQ8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_f2379e9b3dd0440d53ac6cce60291cfd.setContent(i_frame_03bd247d9039d2cb142490e7b8386e52);
+            
+        
+
+        marker_a2218efb1c2e42e60e1105fe92674f1e.bindPopup(popup_f2379e9b3dd0440d53ac6cce60291cfd)
+        ;
+
+        
+    
+    
+            var marker_8c1826d2b785f4a02e7c4b016630252c = L.marker(
+                [4.917698, 103.331607],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_7ecae27b76d50a70c7d90d9befdf2712 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_3d79b43b5b0f8427146a369750ffbe15 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IDUyMzczPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQUk9TRVMgUEVOR0FMSUhBTjxicj4KICAgICAgICA8c3Ryb25nPktlbHVhc2FuIChtMik6PC9zdHJvbmc+IG5hbjxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_7ecae27b76d50a70c7d90d9befdf2712.setContent(i_frame_3d79b43b5b0f8427146a369750ffbe15);
+            
+        
+
+        marker_8c1826d2b785f4a02e7c4b016630252c.bindPopup(popup_7ecae27b76d50a70c7d90d9befdf2712)
+        ;
+
+        
+    
+    
+            var marker_772e4047e47cd81cb9e6fe50ea3243ed = L.marker(
+                [4.936133, 103.344584],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_f43d5f9dc6887444cb53e66f3f13891d = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_0550a7dd282242e842bcb5d1897495a3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNzA5IDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gUFJPU0VTIFBFTkdBTElIQU48YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA3LDk1Mjxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_f43d5f9dc6887444cb53e66f3f13891d.setContent(i_frame_0550a7dd282242e842bcb5d1897495a3);
+            
+        
+
+        marker_772e4047e47cd81cb9e6fe50ea3243ed.bindPopup(popup_f43d5f9dc6887444cb53e66f3f13891d)
+        ;
+
+        
+    
+    
+            var marker_95357b407dfb1871d5127825077090f6 = L.marker(
+                [4.934737, 103.345531],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_806b14720aa116f88112e12c68ab16fb = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_507989eae3623a9bd7ecdea3c1f67122 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxNzEyIDxicj4KICAgICAgICA8c3Ryb25nPlN0YXR1czo8L3N0cm9uZz4gUFJPU0VTIFBFTkdBTElIQU48YnI+CiAgICAgICAgPHN0cm9uZz5LZWx1YXNhbiAobTIpOjwvc3Ryb25nPiA5LDAwNDxicj4KICAgICAgICA8c3Ryb25nPkJlcmF0IGRpcGVyb2xlaCAodGFuKSA6PC9zdHJvbmc+IC0KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_806b14720aa116f88112e12c68ab16fb.setContent(i_frame_507989eae3623a9bd7ecdea3c1f67122);
+            
+        
+
+        marker_95357b407dfb1871d5127825077090f6.bindPopup(popup_806b14720aa116f88112e12c68ab16fb)
+        ;
+
+        
+    
+    
+            var marker_67384d490ddba75bdacea719fd313413 = L.marker(
+                [4.84476, 103.393376],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_32cc4fdc3d3152fde11bc43ef2eb2dac = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_91eb6e05dff8869d8943e9e7615e7ce1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMDA1PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBTRUxFU0FJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gODc5PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gNDYyLjM4CiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_32cc4fdc3d3152fde11bc43ef2eb2dac.setContent(i_frame_91eb6e05dff8869d8943e9e7615e7ce1);
+            
+        
+
+        marker_67384d490ddba75bdacea719fd313413.bindPopup(popup_32cc4fdc3d3152fde11bc43ef2eb2dac)
+        ;
+
+        
+    
+    
+            var marker_260bff08e9bf26bb35706eb68ee43032 = L.marker(
+                [4.844907, 103.393259],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_29c03c8695b8f79c6f523d791bb064c5 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_f9115024c7dfba1f0c66b377b3ffff26 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMDA2PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBTRUxFU0FJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gODc5PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gNTcwLjQzCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_29c03c8695b8f79c6f523d791bb064c5.setContent(i_frame_f9115024c7dfba1f0c66b377b3ffff26);
+            
+        
+
+        marker_260bff08e9bf26bb35706eb68ee43032.bindPopup(popup_29c03c8695b8f79c6f523d791bb064c5)
+        ;
+
+        
+    
+    
+            var marker_601e4cc81ca698fbd513515f2a86511c = L.marker(
+                [4.84506, 103.393135],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_fbe9429b9bbafce557aea04b02f25c78 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_930bb7f0e905eb071d852576ce905fc1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMDA3PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBTRUxFU0FJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gODc5PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gNDAzLjQ2CiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_fbe9429b9bbafce557aea04b02f25c78.setContent(i_frame_930bb7f0e905eb071d852576ce905fc1);
+            
+        
+
+        marker_601e4cc81ca698fbd513515f2a86511c.bindPopup(popup_fbe9429b9bbafce557aea04b02f25c78)
+        ;
+
+        
+    
+    
+            var marker_ac4175fdd89465b7cc8e086ec7ada3d8 = L.marker(
+                [4.8452, 103.393025],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_01137d6497bda9337afe4e1416092bb8 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_c2a9d5c6a814f33f0cb270e95cea2449 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMDA4PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBTRUxFU0FJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gODc5PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gMjMyLjUyCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_01137d6497bda9337afe4e1416092bb8.setContent(i_frame_c2a9d5c6a814f33f0cb270e95cea2449);
+            
+        
+
+        marker_ac4175fdd89465b7cc8e086ec7ada3d8.bindPopup(popup_01137d6497bda9337afe4e1416092bb8)
+        ;
+
+        
+    
+    
+            var marker_9ae0d2c5f23ea35e7f018e2e663be1ef = L.marker(
+                [4.845347, 103.39292],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_d58492c136ee250451db555c64e4a0cd = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_cf7cf69983d04bb47b1c4b705a14d38a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMDA5PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBTRUxFU0FJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gODc5PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gMjcuMjYKICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_d58492c136ee250451db555c64e4a0cd.setContent(i_frame_cf7cf69983d04bb47b1c4b705a14d38a);
+            
+        
+
+        marker_9ae0d2c5f23ea35e7f018e2e663be1ef.bindPopup(popup_d58492c136ee250451db555c64e4a0cd)
+        ;
+
+        
+    
+    
+            var marker_181a96ea30fe43f45d67a1d354bad23d = L.marker(
+                [4.845477, 103.392809],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_4eadb6a0bd4fc3e9cd6795941c40acc7 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_9322947484f46f0d7ee9e5aa43caa8f5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMDEwPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBTRUxFU0FJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gODc5PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_4eadb6a0bd4fc3e9cd6795941c40acc7.setContent(i_frame_9322947484f46f0d7ee9e5aa43caa8f5);
+            
+        
+
+        marker_181a96ea30fe43f45d67a1d354bad23d.bindPopup(popup_4eadb6a0bd4fc3e9cd6795941c40acc7)
+        ;
+
+        
+    
+    
+            var marker_9efed9c8a100fa8edf114fadfa509cdb = L.marker(
+                [4.845617, 103.392692],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_0ce5c7802f3fd725be3e2ba81bbf1539 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_639172c1182db5627a1edc0c4fd2d78b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMDExPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gODc5PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_0ce5c7802f3fd725be3e2ba81bbf1539.setContent(i_frame_639172c1182db5627a1edc0c4fd2d78b);
+            
+        
+
+        marker_9efed9c8a100fa8edf114fadfa509cdb.bindPopup(popup_0ce5c7802f3fd725be3e2ba81bbf1539)
+        ;
+
+        
+    
+    
+            var marker_36a6bc5d20467fe06e40716447847126 = L.marker(
+                [4.845761, 103.392598],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_ba9d0e302ef3a87ff3dbe64d7967bd6d = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_160cb186aefddaa07b695babc28561b2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMDEyPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gODc5PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_ba9d0e302ef3a87ff3dbe64d7967bd6d.setContent(i_frame_160cb186aefddaa07b695babc28561b2);
+            
+        
+
+        marker_36a6bc5d20467fe06e40716447847126.bindPopup(popup_ba9d0e302ef3a87ff3dbe64d7967bd6d)
+        ;
+
+        
+    
+    
+            var marker_e38dc2991d68b0c4a5e3f39a40bda201 = L.marker(
+                [4.845291, 103.394168],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_a5dcf3dde3a8fc481ca1eec2d05b66ed = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_f70b95ba3295857dd8ab25bb91768051 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxMjc5PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBTRUxFU0FJPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNCwzNzYuMDA8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAyLDA2MC4xOQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_a5dcf3dde3a8fc481ca1eec2d05b66ed.setContent(i_frame_f70b95ba3295857dd8ab25bb91768051);
+            
+        
+
+        marker_e38dc2991d68b0c4a5e3f39a40bda201.bindPopup(popup_a5dcf3dde3a8fc481ca1eec2d05b66ed)
+        ;
+
+        
+    
+    
+            var marker_62f25ab96566a4560c587c71ac34c768 = L.marker(
+                [4.841663, 103.393241],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_7bcc3cf6f18fd3f52cac110ab4352005 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_87c2707df85711c03a7c1f2c0c895e34 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAxMzk5PGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gMSwzNzguMDA8YnI+CiAgICAgICAgPHN0cm9uZz5CZXJhdCBkaXBlcm9sZWggKHRhbikgOjwvc3Ryb25nPiAtCiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_7bcc3cf6f18fd3f52cac110ab4352005.setContent(i_frame_87c2707df85711c03a7c1f2c0c895e34);
+            
+        
+
+        marker_62f25ab96566a4560c587c71ac34c768.bindPopup(popup_7bcc3cf6f18fd3f52cac110ab4352005)
+        ;
+
+        
+    
+    
+            var marker_70b4dbca0df966b8763e76ed6c22597b = L.marker(
+                [4.844092, 103.395308],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_29d9a8fe775ffcbd6fa041614569c519 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_501519fda4314ec5ee95a2863259472f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMTQxICgxNzcpPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNjc1PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_29d9a8fe775ffcbd6fa041614569c519.setContent(i_frame_501519fda4314ec5ee95a2863259472f);
+            
+        
+
+        marker_70b4dbca0df966b8763e76ed6c22597b.bindPopup(popup_29d9a8fe775ffcbd6fa041614569c519)
+        ;
+
+        
+    
+    
+            var marker_77ae6c2ddca1ab434af2bb0a4796627e = L.marker(
+                [4.843935, 103.395439],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_aaf117fea735f07a232dd580c594f3aa = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_49d5ab3a01e5490799a92285502236f4 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMTQyICgxNzgpPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNjc1PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_aaf117fea735f07a232dd580c594f3aa.setContent(i_frame_49d5ab3a01e5490799a92285502236f4);
+            
+        
+
+        marker_77ae6c2ddca1ab434af2bb0a4796627e.bindPopup(popup_aaf117fea735f07a232dd580c594f3aa)
+        ;
+
+        
+    
+    
+            var marker_cdf6749219aab3bd181be457c5037d8f = L.marker(
+                [4.843785, 103.395551],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_b502e69426a04716fffe77723257a9f4 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_d6defd2cf91585024dcfbee01f92ef93 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMTQzICgxNzkpPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNjc1PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_b502e69426a04716fffe77723257a9f4.setContent(i_frame_d6defd2cf91585024dcfbee01f92ef93);
+            
+        
+
+        marker_cdf6749219aab3bd181be457c5037d8f.bindPopup(popup_b502e69426a04716fffe77723257a9f4)
+        ;
+
+        
+    
+    
+            var marker_488480a9a936f070763623eab71d2432 = L.marker(
+                [4.843644, 103.395682],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_aa8d254c22860578912889d40ac28c4a = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_2f5aac3905bbcaedd265a993059b1f91 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMTQ0ICgxODApPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNjc1PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_aa8d254c22860578912889d40ac28c4a.setContent(i_frame_2f5aac3905bbcaedd265a993059b1f91);
+            
+        
+
+        marker_488480a9a936f070763623eab71d2432.bindPopup(popup_aa8d254c22860578912889d40ac28c4a)
+        ;
+
+        
+    
+    
+            var marker_5f4b44febef821739dc56465449f4e72 = L.marker(
+                [4.843431, 103.395474],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_6edb2fc02b66ccac3ad3f7dd36be7f00 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_f5981b9e827db7c41c6151b940103811 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMTQ3ICgxODMpPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNjc1PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_6edb2fc02b66ccac3ad3f7dd36be7f00.setContent(i_frame_f5981b9e827db7c41c6151b940103811);
+            
+        
+
+        marker_5f4b44febef821739dc56465449f4e72.bindPopup(popup_6edb2fc02b66ccac3ad3f7dd36be7f00)
+        ;
+
+        
+    
+    
+            var marker_5f9dcb9a015dc64f2a6c93f175bdff15 = L.marker(
+                [4.843602, 103.39535],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_14fcefcc8d1f9e2de1a04311b33f6090 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_9e8eafb0bfe400fe6cec3a4de6c975ec = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMTQ4ICgxODQpPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNjc1PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_14fcefcc8d1f9e2de1a04311b33f6090.setContent(i_frame_9e8eafb0bfe400fe6cec3a4de6c975ec);
+            
+        
+
+        marker_5f9dcb9a015dc64f2a6c93f175bdff15.bindPopup(popup_14fcefcc8d1f9e2de1a04311b33f6090)
+        ;
+
+        
+    
+    
+            var marker_18cab67b67b0eeea51bb3ee2ebd55d73 = L.marker(
+                [4.843759, 103.395221],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_0f55f292da52bd9087cb4ba5f8c2a1a5 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_ff90063f19f6aa90387ea3d51725a673 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMTQ5ICgxODUpPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNjc3PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_0f55f292da52bd9087cb4ba5f8c2a1a5.setContent(i_frame_ff90063f19f6aa90387ea3d51725a673);
+            
+        
+
+        marker_18cab67b67b0eeea51bb3ee2ebd55d73.bindPopup(popup_0f55f292da52bd9087cb4ba5f8c2a1a5)
+        ;
+
+        
+    
+    
+            var marker_f3482eeec8233fefd49e7c11788ce2f2 = L.marker(
+                [4.843923, 103.395083],
+                {}
+            ).addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+    
+        var popup_61cf7bc0b40a9b283829514dc5328c06 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var i_frame_6edc82dc693fd57e53663fcc6e67359b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwMHB4OyI+CiAgICAgICAgPHN0cm9uZz5Mb3Q6PC9zdHJvbmc+IExPVCAyMTUwICgxODYpPGJyPgogICAgICAgIDxzdHJvbmc+U3RhdHVzOjwvc3Ryb25nPiBQRVJTRVRVSlVBTiBUVUFOIFRBTkFIPGJyPgogICAgICAgIDxzdHJvbmc+S2VsdWFzYW4gKG0yKTo8L3N0cm9uZz4gNjc1PGJyPgogICAgICAgIDxzdHJvbmc+QmVyYXQgZGlwZXJvbGVoICh0YW4pIDo8L3N0cm9uZz4gLQogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>`)[0];
+                popup_61cf7bc0b40a9b283829514dc5328c06.setContent(i_frame_6edc82dc693fd57e53663fcc6e67359b);
+            
+        
+
+        marker_f3482eeec8233fefd49e7c11788ce2f2.bindPopup(popup_61cf7bc0b40a9b283829514dc5328c06)
+        ;
+
+        
+    
+    
+
+        function geo_json_46086b97c37d65cb038fbd73d6cd882c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_46086b97c37d65cb038fbd73d6cd882c = L.geoJson(null, {
+                onEachFeature: geo_json_46086b97c37d65cb038fbd73d6cd882c_onEachFeature,
+            
+        });
+
+        function geo_json_46086b97c37d65cb038fbd73d6cd882c_add (data) {
+            geo_json_46086b97c37d65cb038fbd73d6cd882c
+                .addData(data);
+        }
+            geo_json_46086b97c37d65cb038fbd73d6cd882c_add({"features": [{"geometry": {"coordinates": [[[102.86828805500005, 5.561502823000069, 0.0], [102.86856917000006, 5.561782762000064, 0.0], [102.86876704700006, 5.561548648000041, 0.0], [102.86856140500004, 5.561294951000036, 0.0], [102.86828805500005, 5.561502823000069, 0.0]]], "type": "Polygon"}, "id": "0", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "1. 319", "PopupInfo": null, "Shape_Area": 1.16650867703e-07, "Shape_Leng": 0.00137324769512, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.89097486400004, 5.540853224000045, 0.0], [102.89165500700005, 5.540515086000028, 0.0], [102.89096435800008, 5.539111238000032, 0.0], [102.89033084000005, 5.539434928000048, 0.0], [102.89097486400004, 5.540853224000045, 0.0]]], "type": "Polygon"}, "id": "1", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "2. 2986", "PopupInfo": null, "Shape_Area": 1.14766611789e-06, "Shape_Leng": 0.00459318980015, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.89096778400005, 5.539111313000035, 0.0], [102.89165494600007, 5.540515092000021, 0.0], [102.89211843400005, 5.5402926280000315, 0.0], [102.89145353900005, 5.538878415000056, 0.0], [102.89096778400005, 5.539111313000035, 0.0]]], "type": "Polygon"}, "id": "2", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "3. 2987", "PopupInfo": null, "Shape_Area": 8.22658639891e-07, "Shape_Leng": 0.00417847238825, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.89028904300005, 5.537807624000038, 0.0], [102.89063594600003, 5.538468786000067, 0.0], [102.89111810700007, 5.53822623700006, 0.0], [102.89074773300007, 5.537522271000057, 0.0], [102.89028904300005, 5.537807624000038, 0.0]]], "type": "Polygon"}, "id": "3", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "4. 9647", "PopupInfo": null, "Shape_Area": 4.15758501716e-07, "Shape_Leng": 0.00262203348566, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.89063621800005, 5.538472184000057, 0.0], [102.89096691000009, 5.539114658000074, 0.0], [102.89144535100007, 5.538878260000047, 0.0], [102.89112428000004, 5.538224275000061, 0.0], [102.89063621800005, 5.538472184000057, 0.0]]], "type": "Polygon"}, "id": "4", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "5. 9937", "PopupInfo": null, "Shape_Area": 3.92171224033e-07, "Shape_Leng": 0.00253220639563, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.86023428800007, 5.563537626000027, 0.0], [102.86066475500007, 5.564484223000022, 0.0], [102.86162532000009, 5.56417601000004, 0.0], [102.86144660000008, 5.563778237000065, 0.0], [102.86104316800004, 5.563264159000028, 0.0], [102.86023428800007, 5.563537626000027, 0.0]]], "type": "Polygon"}, "id": "5", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "6. 333", "PopupInfo": null, "Shape_Area": 1.0036596037e-06, "Shape_Leng": 0.00399209299137, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.85850161700006, 5.568765034000023, 0.0], [102.85812601100008, 5.568105505000062, 0.0], [102.85781548200003, 5.568194386000073, 0.0], [102.85809593600004, 5.569018113000027, 0.0], [102.85850161700006, 5.568765034000023, 0.0]]], "type": "Polygon"}, "id": "6", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "7. 337", "PopupInfo": null, "Shape_Area": 3.21667264349e-07, "Shape_Leng": 0.00243029351383, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.85752266900005, 5.56895882200007, 0.0], [102.85745276900008, 5.568733976000033, 0.0], [102.85716843900008, 5.568852027000048, 0.0], [102.85724141100008, 5.569044869000038, 0.0], [102.85752266900005, 5.56895882200007, 0.0]]], "type": "Polygon"}, "id": "7", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "8. 336", "PopupInfo": null, "Shape_Area": 6.63498024988e-08, "Shape_Leng": 0.00104363638319, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.85834628400005, 5.568478149000043, 0.0], [102.85855371300005, 5.568342452000024, 0.0], [102.85846742800004, 5.568239267000024, 0.0], [102.85909885100006, 5.56764768000005, 0.0], [102.85915241000004, 5.567712395000058, 0.0], [102.85920507200007, 5.56776174700002, 0.0], [102.85941213300003, 5.567668609000066, 0.0], [102.85953641700007, 5.5675781710000365, 0.0], [102.85917997100006, 5.566958661000058, 0.0], [102.85876866600006, 5.5671230170000285, 0.0], [102.85801730200006, 5.567915977000041, 0.0], [102.85834628400005, 5.568478149000043, 0.0]]], "type": "Polygon"}, "id": "8", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "9. 334", "PopupInfo": null, "Shape_Area": 9.68694655852e-07, "Shape_Leng": 0.00468598091594, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.85909714300004, 5.567648147000057, 0.0], [102.85846917900005, 5.568238568000027, 0.0], [102.85876897000009, 5.568584908000048, 0.0], [102.85964111200008, 5.56798320200005, 0.0], [102.85941547500005, 5.567668948000062, 0.0], [102.85920590900008, 5.567758851000065, 0.0], [102.85909714300004, 5.567648147000057, 0.0]]], "type": "Polygon"}, "id": "9", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "10. 340", "PopupInfo": null, "Shape_Area": 5.38191173825e-07, "Shape_Leng": 0.00314967159113, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.85802762800006, 5.567910136000023, 0.0], [102.85876189300006, 5.567128030000049, 0.0], [102.85847650400007, 5.56662327600003, 0.0], [102.85807148500004, 5.56683040300004, 0.0], [102.85759226600004, 5.567154436000067, 0.0], [102.85723341800008, 5.567297377000045, 0.0], [102.85744053100007, 5.5679406500000255, 0.0], [102.85802762800006, 5.567910136000023, 0.0]]], "type": "Polygon"}, "id": "10", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "11. 341", "PopupInfo": null, "Shape_Area": 1.12133475857e-06, "Shape_Leng": 0.00433596581157, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.86406090000008, 5.563800097000069, 0.0], [102.86467598300004, 5.563643929000023, 0.0], [102.86462116500007, 5.563040534000038, 0.0], [102.86448512800007, 5.562915839000027, 0.0], [102.86447219200005, 5.56290240800007, 0.0], [102.86445922400009, 5.562888943000075, 0.0], [102.86390440700006, 5.56352604500006, 0.0], [102.86406090000008, 5.563800097000069, 0.0]]], "type": "Polygon"}, "id": "11", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "12. 324", "PopupInfo": null, "Shape_Area": 4.19478148716e-07, "Shape_Leng": 0.00262276631443, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.86437079800004, 5.56276837300004, 0.0], [102.86464572200003, 5.562372585000048, 0.0], [102.86470776100003, 5.56227734600003, 0.0], [102.86443098800004, 5.561827900000026, 0.0], [102.86448797800006, 5.561641463000058, 0.0], [102.86417853600005, 5.561513672000046, 0.0], [102.86392953400008, 5.56135776800005, 0.0], [102.86372176300006, 5.561809402000051, 0.0], [102.86374553600007, 5.5619546130000685, 0.0], [102.86437079800004, 5.56276837300004, 0.0]]], "type": "Polygon"}, "id": "12", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "13. 328", "PopupInfo": null, "Shape_Area": 7.28280743993e-07, "Shape_Leng": 0.00361743623185, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.88363173300007, 5.546108350000054, 0.0], [102.88485348200004, 5.547445941000035, 0.0], [102.88508813900006, 5.547162908000075, 0.0], [102.88386640200008, 5.545830540000054, 0.0], [102.88363173300007, 5.546108350000054, 0.0]]], "type": "Polygon"}, "id": "13", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "14. 6770", "PopupInfo": null, "Shape_Area": 6.55873299071e-07, "Shape_Leng": 0.00435061387661, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.88445930700004, 5.545184971000026, 0.0], [102.88571480500008, 5.546522616000061, 0.0], [102.88595408300006, 5.54624526300006, 0.0], [102.88469887300005, 5.544907984000076, 0.0], [102.88445930700004, 5.545184971000026, 0.0]]], "type": "Polygon"}, "id": "14", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "15. 70730", "PopupInfo": null, "Shape_Area": 6.68164295112e-07, "Shape_Leng": 0.00440115304432, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.88207342600003, 5.544815923000044, 0.0], [102.88318786700006, 5.546214807000069, 0.0], [102.88345458400005, 5.545918948000065, 0.0], [102.88233823600007, 5.544586025000058, 0.0], [102.88207342600003, 5.544815923000044, 0.0]]], "type": "Polygon"}, "id": "15", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "16. 6953", "PopupInfo": null, "Shape_Area": 6.56220527905e-07, "Shape_Leng": 0.00427620407821, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.88171543400006, 5.5451644370000395, 0.0], [102.88297412200006, 5.546428162000041, 0.0], [102.88318751000008, 5.546213270000067, 0.0], [102.88207307000005, 5.544815942000071, 0.0], [102.88171543400006, 5.5451644370000395, 0.0]]], "type": "Polygon"}, "id": "16", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "17. 7772", "PopupInfo": null, "Shape_Area": 7.14128648181e-07, "Shape_Leng": 0.00437312930494, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.89220036900008, 5.540211882000051, 0.0], [102.89284402500004, 5.539888477000034, 0.0], [102.89217196000004, 5.538542367000048, 0.0], [102.89155188100005, 5.538865690000023, 0.0], [102.89220036900008, 5.540211882000051, 0.0]]], "type": "Polygon"}, "id": "17", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "18. 2988", "PopupInfo": null, "Shape_Area": 1.06409871711e-06, "Shape_Leng": 0.00441844655995, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[102.89217255600005, 5.538541725000073, 0.0], [102.89284470500007, 5.5398887930000456, 0.0], [102.89343165700006, 5.539617864000036, 0.0], [102.89275796800007, 5.538253189000045, 0.0], [102.89217255600005, 5.538541725000073, 0.0]]], "type": "Polygon"}, "id": "18", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Telaga Papan, Setiu.kmz/Telaga Papan, Setiu", "Name": "19.2989", "PopupInfo": null, "Shape_Area": 9.83024781794e-07, "Shape_Leng": 0.00432647377386, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39315634600001, 4.844698292000032, 0.0], [103.39347538100003, 4.844948851000083, 0.0], [103.39359124500004, 4.844801909000182, 0.0], [103.39330814400017, 4.8445816410000475, 0.0], [103.39326426700018, 4.844581743000106, 0.0], [103.39315634600001, 4.844698292000032, 0.0]]], "type": "Polygon"}, "id": "19", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "1. Lot 2005", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39315769700005, 4.8446995980001475, 0.0], [103.39305380700017, 4.8448356950001426, 0.0], [103.39336608400015, 4.845083888000147, 0.0], [103.39347329600014, 4.844949419000102, 0.0], [103.39315769700005, 4.8446995980001475, 0.0]]], "type": "Polygon"}, "id": "20", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "2. Lot 2006", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39305438100001, 4.844835375999992, 0.0], [103.39293957800004, 4.844981162000181, 0.0], [103.39325260900006, 4.845228462000023, 0.0], [103.39336679700011, 4.845083424000109, 0.0], [103.39305438100001, 4.844835375999992, 0.0]]], "type": "Polygon"}, "id": "21", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "3. 2007", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39313855500006, 4.845370445000128, 0.0], [103.39325326200003, 4.845229246000088, 0.0], [103.39293939000004, 4.844982654000148, 0.0], [103.39282813500012, 4.845127876000049, 0.0], [103.39313855500006, 4.845370445000128, 0.0]]], "type": "Polygon"}, "id": "22", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "4. 2008", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39313998099999, 4.845372229000134, 0.0], [103.39294454800006, 4.8452203320000535, 0.0], [103.3928275830001, 4.845126955000069, 0.0], [103.39271457100017, 4.845265082000026, 0.0], [103.393028593, 4.845514873000184, 0.0], [103.39313998099999, 4.845372229000134, 0.0]]], "type": "Polygon"}, "id": "23", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "5. 2009", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39302693800016, 4.845514865000041, 0.0], [103.39271489800007, 4.84526547500019, 0.0], [103.39259878000007, 4.8454069190001405, 0.0], [103.39291532500005, 4.845657194000182, 0.0], [103.39302693800016, 4.845514865000041, 0.0]]], "type": "Polygon"}, "id": "24", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "6. 2010", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39291643300015, 4.845656390999977, 0.0], [103.3925989280001, 4.845405957000082, 0.0], [103.39248377400014, 4.845552048000172, 0.0], [103.39280163400014, 4.845800104000091, 0.0], [103.39291643300015, 4.845656390999977, 0.0]]], "type": "Polygon"}, "id": "25", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "7. 2011", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39280290300019, 4.8457989480001515, 0.0], [103.39248260900013, 4.84555361800011, 0.0], [103.39237105900014, 4.845695253000031, 0.0], [103.3926879870001, 4.845946913000034, 0.0], [103.39280290300019, 4.8457989480001515, 0.0]]], "type": "Polygon"}, "id": "26", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "8. Lot 2012", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39419640800008, 4.844868396999971, 0.0], [103.39376047600007, 4.8454219080000485, 0.0], [103.39417266900017, 4.845739287000129, 0.0], [103.39460900400013, 4.845194242000048, 0.0], [103.39419640800008, 4.844868396999971, 0.0]]], "type": "Polygon"}, "id": "27", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "9. 1279", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39318729600012, 4.8414151370000695, 0.0], [103.39304304400008, 4.841766135000171, 0.0], [103.39332294500002, 4.84188083000015, 0.0], [103.39346706800018, 4.841537599999981, 0.0], [103.39318729600012, 4.8414151370000695, 0.0]]], "type": "Polygon"}, "id": "28", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "10. 1399", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39524012800013, 4.843923590999964, 0.0], [103.39511382900008, 4.844082100000037, 0.0], [103.39534545400016, 4.844262247000131, 0.0], [103.39547101000005, 4.84410324300012, 0.0], [103.39524012800013, 4.843923590999964, 0.0]]], "type": "Polygon"}, "id": "29", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "11. 2141", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.3952397000001, 4.843922720000023, 0.0], [103.3954714680001, 4.844103844000074, 0.0], [103.39560424800004, 4.8439428640000415, 0.0], [103.39536963900008, 4.843759718000172, 0.0], [103.3952397000001, 4.843922720000023, 0.0]]], "type": "Polygon"}, "id": "30", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "12. 2142", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39536958200017, 4.84375832700016, 0.0], [103.39560530000017, 4.843942691000166, 0.0], [103.39573025300007, 4.843786087000126, 0.0], [103.39549836023377, 4.843606191163246, 0.0], [103.39536958200017, 4.84375832700016, 0.0]]], "type": "Polygon"}, "id": "31", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "13. 2143", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39549837100009, 4.84360512100011, 0.0], [103.39573063800003, 4.843784530000107, 0.0], [103.39585566500017, 4.84362593100002, 0.0], [103.39562578700014, 4.843448607000141, 0.0], [103.39549837100009, 4.84360512100011, 0.0]]], "type": "Polygon"}, "id": "32", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "14. 2144", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39528428100016, 4.843420717000129, 0.0], [103.39550847200013, 4.8435906950001595, 0.0], [103.39563978100006, 4.843429314000048, 0.0], [103.3954169370001, 4.843257790000052, 0.0], [103.39528428100016, 4.843420717000129, 0.0]]], "type": "Polygon"}, "id": "33", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "15. 2147", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39515291700013, 4.843583631000115, 0.0], [103.39537548900006, 4.843750237000052, 0.0], [103.3955093290001, 4.843592102000173, 0.0], [103.39528450800009, 4.843421350000085, 0.0], [103.39515291700013, 4.843583631000115, 0.0]]], "type": "Polygon"}, "id": "34", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "16. 2148", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39524000100005, 4.843921039000122, 0.0], [103.39537619000004, 4.843750712000144, 0.0], [103.39515369000009, 4.8435834239999735, 0.0], [103.39502125500007, 4.843742879000104, 0.0], [103.39524000100005, 4.843921039000122, 0.0]]], "type": "Polygon"}, "id": "35", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "17. 2149", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.39524091999999, 4.843921281000121, 0.0], [103.39502190100012, 4.843742893000126, 0.0], [103.39488962000007, 4.843910708000067, 0.0], [103.39511394400017, 4.844081367000058, 0.0], [103.39524091999999, 4.843921281000121, 0.0]]], "type": "Polygon"}, "id": "36", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Rantau Abang, Dungun.kmz/Rantau Abang, Dungun", "Name": "18. 2150", "PopupInfo": null, "Shape_Area": 0.0, "Shape_Leng": 0.0, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34525064500014, 4.933356987000138, 0.0], [103.34689476900013, 4.934607429000039, 0.0], [103.34712984400011, 4.93432974100017, 0.0], [103.34545047000006, 4.933062722000045, 0.0], [103.34525064500014, 4.933356987000138, 0.0]]], "type": "Polygon"}, "id": "37", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "1. 1714", "PopupInfo": null, "Shape_Area": 7.48932110067e-07, "Shape_Leng": 0.00488885745149, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[[103.3474914790001, 4.93281934800018, 0.0], [103.34727817600015, 4.933097676000102, 0.0], [103.34739905100008, 4.933188328000142, 0.0], [103.34744472826594, 4.933219160453348, 0.0], [103.3476495380001, 4.932941247000031, 0.0], [103.3474914790001, 4.93281934800018, 0.0]]], [[[103.34744472826594, 4.933219160453348, 0.0], [103.34744459300015, 4.933219344000008, 0.0], [103.34744493500017, 4.933219300000189, 0.0], [103.34744472826594, 4.933219160453348, 0.0]]]], "type": "MultiPolygon"}, "id": "38", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "2. 5510", "PopupInfo": null, "Shape_Area": 7.07878937562e-08, "Shape_Leng": 0.00110251949002, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.3476480970001, 4.932942658000059, 0.0], [103.347443167, 4.933217912000089, 0.0], [103.34760488100005, 4.933341516000041, 0.0], [103.347812611, 4.933062155000073, 0.0], [103.3476480970001, 4.932942658000059, 0.0]]], "type": "Polygon"}, "id": "39", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "3. 5511", "PopupInfo": null, "Shape_Area": 7.03122502182e-08, "Shape_Leng": 0.00109816832397, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34781117800014, 4.9330607310001255, 0.0], [103.34760488400013, 4.933340078000072, 0.0], [103.347717208, 4.933429394000029, 0.0], [103.34777360100014, 4.933428990000152, 0.0], [103.34797359500004, 4.933184972000049, 0.0], [103.34781117800014, 4.9330607310001255, 0.0]]], "type": "Polygon"}, "id": "40", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "4. 5512", "PopupInfo": null, "Shape_Area": 6.75174510223e-08, "Shape_Leng": 0.00106715498708, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34743305100005, 4.933358243000043, 0.0], [103.34728652600012, 4.933541373000139, 0.0], [103.34753844600016, 4.933730294000043, 0.0], [103.34765679700007, 4.933579479000059, 0.0], [103.34765557700018, 4.933522079000113, 0.0], [103.34743305100005, 4.933358243000043, 0.0]]], "type": "Polygon"}, "id": "41", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "5. 5184", "PopupInfo": null, "Shape_Area": 7.3158313216e-08, "Shape_Leng": 0.00107487717776, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34544855500019, 4.933061102000067, 0.0], [103.3462775480001, 4.9336884020001435, 0.0], [103.34645196300005, 4.933447410000099, 0.0], [103.34563330600008, 4.932806935000087, 0.0], [103.34557856999999, 4.93281637299998, 0.0], [103.34544855500019, 4.933061102000067, 0.0]]], "type": "Polygon"}, "id": "42", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "6. 4081", "PopupInfo": null, "Shape_Area": 3.23881802996e-07, "Shape_Leng": 0.00270916108939, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.3462764570001, 4.933685538000077, 0.0], [103.34712840800017, 4.9343315990001315, 0.0], [103.34728591300012, 4.934129215000098, 0.0], [103.34728177800008, 4.934063154000057, 0.0], [103.34645725400003, 4.933444123000072, 0.0], [103.3462764570001, 4.933685538000077, 0.0]]], "type": "Polygon"}, "id": "43", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "7. 4082", "PopupInfo": null, "Shape_Area": 3.25000783296e-07, "Shape_Leng": 0.00272450195038, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34703496800006, 4.933357094000087, 0.0], [103.34728795800004, 4.933539948000089, 0.0], [103.34743305000012, 4.933356810000021, 0.0], [103.34717997700005, 4.93316494700008, 0.0], [103.34703496800006, 4.933357094000087, 0.0]]], "type": "Polygon"}, "id": "44", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "8. 5183", "PopupInfo": null, "Shape_Area": 7.4655907346e-08, "Shape_Leng": 0.00110410522162, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34579202700019, 4.932423321000158, 0.0], [103.34562781000017, 4.932733375000055, 0.0], [103.34735062300018, 4.934045543000082, 0.0], [103.34758065900019, 4.933763751000072, 0.0], [103.34579202700019, 4.932423321000158, 0.0]]], "type": "Polygon"}, "id": "45", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "9. 1716", "PopupInfo": null, "Shape_Area": 7.81007349177e-07, "Shape_Leng": 0.0051153941965, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34193615100014, 4.938542034000079, 0.0], [103.34148943000008, 4.939107763000095, 0.0], [103.34293628200004, 4.9402551510001445, 0.0], [103.34338168700003, 4.939636374000031, 0.0], [103.34193615100014, 4.938542034000079, 0.0]]], "type": "Polygon"}, "id": "46", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "10. 1360", "PopupInfo": null, "Shape_Area": 1.3564886935e-06, "Shape_Leng": 0.00514288723983, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34269743900012, 4.937489683000138, 0.0], [103.34242083000004, 4.9378787230001535, 0.0], [103.34385268200003, 4.938987119000046, 0.0], [103.34413127500005, 4.938596751999967, 0.0], [103.34269743900012, 4.937489683000138, 0.0]]], "type": "Polygon"}, "id": "47", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "11. 1362", "PopupInfo": null, "Shape_Area": 8.65891971536e-07, "Shape_Leng": 0.00457915261882, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.3443021860001, 4.938462480000055, 0.0], [103.34418218300004, 4.938630337000177, 0.0], [103.34439772399998, 4.938781796000001, 0.0], [103.34452197200017, 4.938609933000123, 0.0], [103.3443021860001, 4.938462480000055, 0.0]]], "type": "Polygon"}, "id": "48", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "12. 50981", "PopupInfo": null, "Shape_Area": 5.52247108395e-08, "Shape_Leng": 0.000946513894997, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34410169900013, 4.935058066000124, 0.0], [103.34398203300015, 4.935291844000119, 0.0], [103.34413651000006, 4.935433155000169, 0.0], [103.34429951000004, 4.9352556300001424, 0.0], [103.34410169900013, 4.935058066000124, 0.0]]], "type": "Polygon"}, "id": "49", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "13. 52028", "PopupInfo": null, "Shape_Area": 6.01713880036e-08, "Shape_Leng": 0.000992565085043, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34429951000004, 4.9352556300001424, 0.0], [103.34413653700017, 4.935434935000103, 0.0], [103.34430707200016, 4.935595304000174, 0.0], [103.34463802300007, 4.935215851999999, 0.0], [103.34461088600005, 4.935192324000013, 0.0], [103.34443595500005, 4.9353867830000695, 0.0], [103.34429951000004, 4.9352556300001424, 0.0]]], "type": "Polygon"}, "id": "50", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "14. 52029", "PopupInfo": null, "Shape_Area": 6.5783383486e-08, "Shape_Leng": 0.00146663406242, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34463732400013, 4.935579364000091, 0.0], [103.34447902100004, 4.935763279000128, 0.0], [103.34464574000009, 4.935925188999988, 0.0], [103.34497874800013, 4.935541012000101, 0.0], [103.34495098000014, 4.935513012000115, 0.0], [103.34477733000017, 4.93571571200016, 0.0], [103.34463732400013, 4.935579364000091, 0.0]]], "type": "Polygon"}, "id": "51", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "15. 52031", "PopupInfo": null, "Shape_Area": 6.66287363928e-08, "Shape_Leng": 0.00148525199585, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34463572300007, 4.935578854000028, 0.0], [103.34477733000017, 4.93571571200016, 0.0], [103.34495252900018, 4.935514572000045, 0.0], [103.34481308699998, 4.935379417000149, 0.0], [103.34463572300007, 4.935578854000028, 0.0]]], "type": "Polygon"}, "id": "52", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "16. 52034", "PopupInfo": null, "Shape_Area": 5.21208711509e-08, "Shape_Leng": 0.00092476479449, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34463776400014, 4.935577368000111, 0.0], [103.34481565400012, 4.9353792120000435, 0.0], [103.34466817999999, 4.935241720000022, 0.0], [103.34448974800017, 4.935440055000186, 0.0], [103.34463776400014, 4.935577368000111, 0.0]]], "type": "Polygon"}, "id": "53", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "17. 52035", "PopupInfo": null, "Shape_Area": 5.37695482061e-08, "Shape_Leng": 0.000936601447308, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34443518700016, 4.935384561000035, 0.0], [103.34461199500004, 4.935192293000114, 0.0], [103.3444376220001, 4.935019627000031, 0.0], [103.34426008800017, 4.93521640300014, 0.0], [103.34443518700016, 4.935384561000035, 0.0]]], "type": "Polygon"}, "id": "54", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "18. 52036", "PopupInfo": null, "Shape_Area": 6.41820606413e-08, "Shape_Leng": 0.00101439720131, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34410107800016, 4.935058460000164, 0.0], [103.34426166100019, 4.93521645800007, 0.0], [103.34443910400006, 4.935019869000087, 0.0], [103.3442647720002, 4.93484433399999, 0.0], [103.34420707100014, 4.934856218000107, 0.0], [103.34410107800016, 4.935058460000164, 0.0]]], "type": "Polygon"}, "id": "55", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "19. 52037", "PopupInfo": null, "Shape_Area": 6.80387377317e-08, "Shape_Leng": 0.0010247457626, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34480444700017, 4.936101206999979, 0.0], [103.3452790030002, 4.936541482000109, 0.0], [103.34555940100012, 4.936174557000015, 0.0], [103.34556160600005, 4.936099828000181, 0.0], [103.34513095400007, 4.935688483000149, 0.0], [103.34480444700017, 4.936101206999979, 0.0]]], "type": "Polygon"}, "id": "56", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "21. 50616", "PopupInfo": null, "Shape_Area": 3.33102410966e-07, "Shape_Leng": 0.00230569301558, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34513044300013, 4.9356902790000845, 0.0], [103.34500175100015, 4.935566144000063, 0.0], [103.34482782300017, 4.935765912000079, 0.0], [103.34496223100007, 4.935896517000117, 0.0], [103.34513044300013, 4.9356902790000845, 0.0]]], "type": "Polygon"}, "id": "57", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "22. 52033", "PopupInfo": null, "Shape_Area": 4.84942305529e-08, "Shape_Leng": 0.000897228359131, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33925399400005, 4.942517373000101, 0.0], [103.3389277, 4.943165808000003, 0.0], [103.34089194300009, 4.9437218790001225, 0.0], [103.34126447800008, 4.943013909000172, 0.0], [103.33925399400005, 4.942517373000101, 0.0]]], "type": "Polygon"}, "id": "58", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "23. 1353", "PopupInfo": null, "Shape_Area": 1.53173296846e-06, "Shape_Leng": 0.00563823496776, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.3387227570002, 4.943513712000026, 0.0], [103.33840466600009, 4.943973960000108, 0.0], [103.34036114300005, 4.944526682000173, 0.0], [103.34066980700004, 4.94407518700001, 0.0], [103.3387227570002, 4.943513712000026, 0.0]]], "type": "Polygon"}, "id": "59", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "24. 1351", "PopupInfo": null, "Shape_Area": 1.06433548958e-06, "Shape_Leng": 0.00516583599826, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33819598100013, 4.94423721000004, 0.0], [103.34016036700012, 4.944791255000155, 0.0], [103.34035994600004, 4.944530317000044, 0.0], [103.33840533400013, 4.94396628200019, 0.0], [103.33819598100013, 4.94423721000004, 0.0]]], "type": "Polygon"}, "id": "60", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "25. 1573", "PopupInfo": null, "Shape_Area": 6.35400120151e-07, "Shape_Leng": 0.00474629151713, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33815672399999, 4.944278165000128, 0.0], [103.33793826900012, 4.944556893000083, 0.0], [103.33988101200003, 4.945109542000068, 0.0], [103.34012176300013, 4.944828950000158, 0.0], [103.33815672399999, 4.944278165000128, 0.0]]], "type": "Polygon"}, "id": "61", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "26. 1572", "PopupInfo": null, "Shape_Area": 6.73101035397e-07, "Shape_Leng": 0.00478444511743, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33793501700006, 4.944556897000098, 0.0], [103.33776235400006, 4.944768717000045, 0.0], [103.33966352600015, 4.945387713999992, 0.0], [103.33989076800015, 4.945106191999969, 0.0], [103.33793501700006, 4.944556897000098, 0.0]]], "type": "Polygon"}, "id": "62", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "27. 1571", "PopupInfo": null, "Shape_Area": 5.92496979748e-07, "Shape_Leng": 0.00466589681912, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33757783900018, 4.944994619000056, 0.0], [103.33948874499998, 4.945610497000075, 0.0], [103.33965582700012, 4.9453952020001, 0.0], [103.33776438400002, 4.9447665420001385, 0.0], [103.33757783900018, 4.944994619000056, 0.0]]], "type": "Polygon"}, "id": "63", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "28. 1570", "PopupInfo": null, "Shape_Area": 5.31489330109e-07, "Shape_Leng": 0.00456805428606, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33733406000016, 4.945263288000035, 0.0], [103.33686886300012, 4.945835465000187, 0.0], [103.3384573740002, 4.946581951000155, 0.0], [103.33916093800013, 4.945985012000051, 0.0], [103.33733406000016, 4.945263288000035, 0.0]]], "type": "Polygon"}, "id": "64", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "29. 1568", "PopupInfo": null, "Shape_Area": 1.42724312851e-06, "Shape_Leng": 0.00537954379474, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34664113600019, 4.93261827900011, 0.0], [103.34680491500012, 4.932737214000099, 0.0], [103.34701472199998, 4.932457088000035, 0.0], [103.34684724800019, 4.932331953000073, 0.0], [103.34664113600019, 4.93261827900011, 0.0]]], "type": "Polygon"}, "id": "65", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "30. 5506", "PopupInfo": null, "Shape_Area": 7.22880686577e-08, "Shape_Leng": 0.00111424945217, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34701296200001, 4.932458807000103, 0.0], [103.34680491500012, 4.932737214000099, 0.0], [103.34696374500015, 4.93285828400019, 0.0], [103.34717022900014, 4.932577085999981, 0.0], [103.34701296200001, 4.932458807000103, 0.0]]], "type": "Polygon"}, "id": "66", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "31. 5507", "PopupInfo": null, "Shape_Area": 6.90267605086e-08, "Shape_Leng": 0.0010929142582, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34717195600001, 4.932577090000166, 0.0], [103.34696719100003, 4.932858281000108, 0.0], [103.34712456300014, 4.932975599000031, 0.0], [103.347332838, 4.9326980820000585, 0.0], [103.34717195600001, 4.932577090000166, 0.0]]], "type": "Polygon"}, "id": "67", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "32. 5508", "PopupInfo": null, "Shape_Area": 6.90606545599e-08, "Shape_Leng": 0.00109241516586, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34733292700014, 4.93269495200019, 0.0], [103.34712484600004, 4.932977987000072, 0.0], [103.34727781600009, 4.933097230000044, 0.0], [103.34749036300019, 4.932816889000037, 0.0], [103.34733292700014, 4.93269495200019, 0.0]]], "type": "Polygon"}, "id": "68", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "33. 5509", "PopupInfo": null, "Shape_Area": 6.90805879244e-08, "Shape_Leng": 0.00109618879551, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34777081800001, 4.931072185000119, 0.0], [103.34715230199998, 4.9320388000000435, 0.0], [103.34815361000005, 4.932477026000072, 0.0], [103.34777081800001, 4.931072185000119, 0.0]]], "type": "Polygon"}, "id": "69", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "34. 3756", "PopupInfo": null, "Shape_Area": 6.19464562531e-07, "Shape_Leng": 0.00369662947024, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33944702100007, 4.9421520130000545, 0.0], [103.339289275, 4.942455665000125, 0.0], [103.33968803200003, 4.942558416000054, 0.0], [103.33977245200009, 4.94224438599997, 0.0], [103.33944702100007, 4.9421520130000545, 0.0]]], "type": "Polygon"}, "id": "70", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "35. 52068", "PopupInfo": null, "Shape_Area": 1.23642572702e-07, "Shape_Leng": 0.00141743065473, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33977249000009, 4.9422451560000695, 0.0], [103.33968809100014, 4.942560065000066, 0.0], [103.34005832300005, 4.942642856000077, 0.0], [103.34014312100015, 4.942348984000091, 0.0], [103.33977249000009, 4.9422451560000695, 0.0]]], "type": "Polygon"}, "id": "71", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "36. 52069", "PopupInfo": null, "Shape_Area": 1.20649673217e-07, "Shape_Leng": 0.00139615999531, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34014366000008, 4.9423470280001425, 0.0], [103.3400591510001, 4.942642448000072, 0.0], [103.34044703600017, 4.942729722000024, 0.0], [103.34053356200019, 4.942455192000182, 0.0], [103.34014366000008, 4.9423470280001425, 0.0]]], "type": "Polygon"}, "id": "72", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "37. 52070", "PopupInfo": null, "Shape_Area": 1.19181609748e-07, "Shape_Leng": 0.0013973217263, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34099983300013, 4.942584467000131, 0.0], [103.34138875300016, 4.942695037000078, 0.0], [103.34150299900006, 4.942482077000022, 0.0], [103.34148073500012, 4.9424316660000045, 0.0], [103.34107268900016, 4.9423095610001155, 0.0], [103.34099983300013, 4.942584467000131, 0.0]]], "type": "Polygon"}, "id": "73", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "38. 52073", "PopupInfo": null, "Shape_Area": 1.2208583557e-07, "Shape_Leng": 0.00141143043777, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34059079300005, 4.9424689060001015, 0.0], [103.34099743700011, 4.942584273000136, 0.0], [103.34107019100009, 4.9423094930001525, 0.0], [103.34067735400004, 4.942186102000164, 0.0], [103.34059079300005, 4.9424689060001015, 0.0]]], "type": "Polygon"}, "id": "74", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "39. 52074", "PopupInfo": null, "Shape_Area": 1.20953886172e-07, "Shape_Leng": 0.00141445564856, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34030077200015, 4.942066990000058, 0.0], [103.34020089500012, 4.942363070000056, 0.0], [103.34058919400019, 4.942467980000174, 0.0], [103.34067532500012, 4.942186666000168, 0.0], [103.34030077200015, 4.942066990000058, 0.0]]], "type": "Polygon"}, "id": "75", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "40. 52075", "PopupInfo": null, "Shape_Area": 1.20560240098e-07, "Shape_Leng": 0.00140210556355, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33887242900016, 4.942382165000083, 0.0], [103.3392550710002, 4.942519451000123, 0.0], [103.33961771600008, 4.941831277000176, 0.0], [103.33926126699998, 4.9416551129999675, 0.0], [103.33887242900016, 4.942382165000083, 0.0]]], "type": "Polygon"}, "id": "76", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "41. 1683", "PopupInfo": null, "Shape_Area": 3.20383286519e-07, "Shape_Leng": 0.00240650763792, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33887242900016, 4.942382165000083, 0.0], [103.33852528100005, 4.943044751000059, 0.0], [103.33892618200008, 4.943165539000063, 0.0], [103.3392514410001, 4.94251945200017, 0.0], [103.33887242900016, 4.942382165000083, 0.0]]], "type": "Polygon"}, "id": "77", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "42. 1682", "PopupInfo": null, "Shape_Area": 2.98545630515e-07, "Shape_Leng": 0.00229317158362, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34044793000004, 4.942731671000047, 0.0], [103.3408587630002, 4.942825290000087, 0.0], [103.34093388299999, 4.942568276000145, 0.0], [103.34053668000013, 4.9424539420001, 0.0], [103.34044793000004, 4.942731671000047, 0.0]]], "type": "Polygon"}, "id": "78", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "43. 52071", "PopupInfo": null, "Shape_Area": 1.16542213217e-07, "Shape_Leng": 0.00139402749528, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34093475999998, 4.942568822000169, 0.0], [103.34086043300016, 4.9428285080001615, 0.0], [103.34121918400007, 4.942911805000051, 0.0], [103.34129360500009, 4.942890020000107, 0.0], [103.34138665600011, 4.942695558000025, 0.0], [103.34093475999998, 4.942568822000169, 0.0]]], "type": "Polygon"}, "id": "79", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "44. 52072", "PopupInfo": null, "Shape_Area": 1.15372327241e-07, "Shape_Leng": 0.0014008614459, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33984181600016, 4.942263374000163, 0.0], [103.34020158300018, 4.94236413800013, 0.0], [103.34030093200016, 4.942066287999978, 0.0], [103.3399162980001, 4.941959399000098, 0.0], [103.33984181600016, 4.942263374000163, 0.0]]], "type": "Polygon"}, "id": "80", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "45. 52076", "PopupInfo": null, "Shape_Area": 1.21023915129e-07, "Shape_Leng": 0.00139977088266, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.3396028900001, 4.941849277000074, 0.0], [103.3394470830001, 4.942153617000031, 0.0], [103.33983975300009, 4.942263383000068, 0.0], [103.33991419700004, 4.941961469000091, 0.0], [103.3396028900001, 4.941849277000074, 0.0]]], "type": "Polygon"}, "id": "81", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "46. 52077", "PopupInfo": null, "Shape_Area": 1.19473730902e-07, "Shape_Leng": 0.00139149078955, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.3356103110001, 4.944086723000112, 0.0], [103.33577764600017, 4.944166209000116, 0.0], [103.33589171500012, 4.943941872000096, 0.0], [103.33572696400006, 4.94386077300004, 0.0], [103.3356103110001, 4.944086723000112, 0.0]]], "type": "Polygon"}, "id": "82", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "47. 51315", "PopupInfo": null, "Shape_Area": 4.66461252688e-08, "Shape_Leng": 0.000874841823029, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33964173000015, 4.950037097000006, 0.0], [103.34108764300015, 4.951109478000035, 0.0], [103.3413419420001, 4.950788807000038, 0.0], [103.33990319600008, 4.949697855000011, 0.0], [103.33964173000015, 4.950037097000006, 0.0]]], "type": "Polygon"}, "id": "83", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "48. 1378", "PopupInfo": null, "Shape_Area": 7.54848854858e-07, "Shape_Leng": 0.00444335310372, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.35003405400005, 4.939261253000154, 0.0], [103.3498523560001, 4.939577815000064, 0.0], [103.35049630600014, 4.939799005000054, 0.0], [103.3506507400001, 4.93953199200007, 0.0], [103.35003405400005, 4.939261253000154, 0.0]]], "type": "Polygon"}, "id": "84", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "49. 324", "PopupInfo": null, "Shape_Area": 2.25257183089e-07, "Shape_Leng": 0.00202783658064, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34425231500012, 4.936631780000141, 0.0], [103.34436368000001, 4.9367369490000215, 0.0], [103.34457718800013, 4.9364802010001085, 0.0], [103.34447116600006, 4.9363765620001345, 0.0], [103.34425231500012, 4.936631780000141, 0.0]]], "type": "Polygon"}, "id": "85", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "50. 5077", "PopupInfo": null, "Shape_Area": 5.03936927326e-08, "Shape_Leng": 0.000971563868366, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34413576300011, 4.936523461000149, 0.0], [103.34425231500012, 4.936631780000141, 0.0], [103.34447116600006, 4.9363765620001345, 0.0], [103.34436238300003, 4.936264036000068, 0.0], [103.34413576300011, 4.936523461000149, 0.0]]], "type": "Polygon"}, "id": "86", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "51. 5078", "PopupInfo": null, "Shape_Area": 5.35867808461e-08, "Shape_Leng": 0.000996295760625, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.3440224310001, 4.936415560000171, 0.0], [103.3441336420002, 4.9365194200000815, 0.0], [103.34436238600011, 4.936262040999964, 0.0], [103.34424916100005, 4.9361571180000965, 0.0], [103.3440224310001, 4.936415560000171, 0.0]]], "type": "Polygon"}, "id": "87", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "52. 5079", "PopupInfo": null, "Shape_Area": 5.27160075255e-08, "Shape_Leng": 0.000994669733608, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34390548900006, 4.93631711900008, 0.0], [103.34402248500015, 4.936409487000105, 0.0], [103.34425119200012, 4.936155138000117, 0.0], [103.34413762200018, 4.9360499130000335, 0.0], [103.34390548900006, 4.93631711900008, 0.0]]], "type": "Polygon"}, "id": "88", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "53. 5080", "PopupInfo": null, "Shape_Area": 5.28279020643e-08, "Shape_Leng": 0.000999896335563, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34500826900018, 4.9337138020001134, 0.0], [103.34489944800015, 4.9338750950001895, 0.0], [103.34492995900007, 4.933929354000156, 0.0], [103.34639707300016, 4.935049486000139, 0.0], [103.34646833200009, 4.935046485000157, 0.0], [103.34657672400016, 4.934907250000094, 0.0], [103.34500826900018, 4.9337138020001134, 0.0]]], "type": "Polygon"}, "id": "89", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "54. 50987", "PopupInfo": null, "Shape_Area": 4.30936988829e-07, "Shape_Leng": 0.00432131161313, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34341526900016, 4.936329736000175, 0.0], [103.34475993400014, 4.9375728680001885, 0.0], [103.34492633400004, 4.9372620970001435, 0.0], [103.34359470200019, 4.936018183000044, 0.0], [103.34341526900016, 4.936329736000175, 0.0]]], "type": "Polygon"}, "id": "90", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "55. 1707", "PopupInfo": null, "Shape_Area": 6.31406608416e-07, "Shape_Leng": 0.00436554426461, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34321816900018, 4.936703373000114, 0.0], [103.3446448700002, 4.937796007999964, 0.0], [103.34475838999998, 4.9375682480001615, 0.0], [103.34341609800015, 4.9363296070000615, 0.0], [103.34321816900018, 4.936703373000114, 0.0]]], "type": "Polygon"}, "id": "91", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "56. 3297", "PopupInfo": null, "Shape_Area": 5.97923715493e-07, "Shape_Leng": 0.00430092023544, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34077354100009, 4.9405156010000155, 0.0], [103.34102277400018, 4.940621754000006, 0.0], [103.3412944550002, 4.940150506000123, 0.0], [103.3410586280001, 4.940010633000156, 0.0], [103.34077354100009, 4.9405156010000155, 0.0]]], "type": "Polygon"}, "id": "92", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "57. 5143", "PopupInfo": null, "Shape_Area": 1.52625684257e-07, "Shape_Leng": 0.00166892417244, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34129842900018, 4.9401504920001, 0.0], [103.3410247650001, 4.940623761000097, 0.0], [103.34129385600005, 4.94073621300015, 0.0], [103.341541399, 4.940289016000008, 0.0], [103.34129842900018, 4.9401504920001, 0.0]]], "type": "Polygon"}, "id": "93", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "58. 52144", "PopupInfo": null, "Shape_Area": 1.50536297113e-07, "Shape_Leng": 0.00162916066613, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34154283300012, 4.940287583000156, 0.0], [103.34129184200003, 4.940736214000083, 0.0], [103.34156977100002, 4.940845823000188, 0.0], [103.34180763600011, 4.940439273000095, 0.0], [103.34154283300012, 4.940287583000156, 0.0]]], "type": "Polygon"}, "id": "94", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "59. 52145", "PopupInfo": null, "Shape_Area": 1.47967919626e-07, "Shape_Leng": 0.00158902609075, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34188146399998, 4.940981638000153, 0.0], [103.34215808500005, 4.941110700000138, 0.0], [103.3422230430001, 4.941083200000037, 0.0], [103.34240387800003, 4.940838102000157, 0.0], [103.34238706899998, 4.940778641000122, 0.0], [103.34209354800015, 4.940605171000186, 0.0], [103.34188146399998, 4.940981638000153, 0.0]]], "type": "Polygon"}, "id": "95", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "60. 52147", "PopupInfo": null, "Shape_Area": 1.49422059079e-07, "Shape_Leng": 0.00151521238492, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34621055500014, 4.935479794000173, 0.0], [103.34462948300006, 4.934245729000111, 0.0], [103.34459114300012, 4.934301774000062, 0.0], [103.34453789900016, 4.934371977000126, 0.0], [103.34613346200007, 4.935585383000159, 0.0], [103.34621055500014, 4.935479794000173, 0.0]]], "type": "Polygon"}, "id": "96", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "62. 52380", "PopupInfo": null, "Shape_Area": 2.87177160133e-07, "Shape_Leng": 0.00429695912363, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.3396574190001, 4.941783612000052, 0.0], [103.34153269400008, 4.942380424000078, 0.0], [103.34173304700005, 4.941997887000127, 0.0], [103.33982041200017, 4.941436151000175, 0.0], [103.3396574190001, 4.941783612000052, 0.0]]], "type": "Polygon"}, "id": "97", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "63. 1355", "PopupInfo": null, "Shape_Area": 7.96530126385e-07, "Shape_Leng": 0.00477699261029, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33981687500017, 4.941436097000178, 0.0], [103.34173992100011, 4.941994406000106, 0.0], [103.34192560600007, 4.941625873000078, 0.0], [103.34001000000006, 4.941053674000045, 0.0], [103.33981687500017, 4.941436097000178, 0.0]]], "type": "Polygon"}, "id": "98", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "64. 1356", "PopupInfo": null, "Shape_Area": 8.2772662175e-07, "Shape_Leng": 0.00484278139392, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.33140359300018, 4.9179640290001885, 0.0], [103.33160438900012, 4.918039466000096, 0.0], [103.33189078200007, 4.9174005090000605, 0.0], [103.331567113, 4.917334418000053, 0.0], [103.33140154099999, 4.917853721000085, 0.0], [103.33140359300018, 4.9179640290001885, 0.0]]], "type": "Polygon"}, "id": "99", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "65. 52373", "PopupInfo": null, "Shape_Area": 1.91913463771e-07, "Shape_Leng": 0.00190043805215, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34377898600013, 4.935640982000052, 0.0], [103.345134454, 4.936894951000113, 0.0], [103.34532249400013, 4.936584464000134, 0.0], [103.34396809900005, 4.935327842000049, 0.0], [103.34377898600013, 4.935640982000052, 0.0]]], "type": "Polygon"}, "id": "100", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "66. 1709", "PopupInfo": null, "Shape_Area": 6.59205165148e-07, "Shape_Leng": 0.00442291168489, "Snippet": null, "SymbolID": 0}, "type": "Feature"}, {"geometry": {"coordinates": [[[103.34462912100003, 4.9342460620000566, 0.0], [103.34621018400003, 4.935480882000093, 0.0], [103.346450462, 4.935176689000059, 0.0], [103.34484202400017, 4.933951263000097, 0.0], [103.34462912100003, 4.9342460620000566, 0.0]]], "type": "Polygon"}, "id": "101", "properties": {"AltMode": 0, "Base": 0.0, "Clamped": -1, "Extruded": 0, "FolderPath": "Jambu Bongkok, Marang.kmz/Jambu Bongkok, Marang", "Name": "67. 1712", "PopupInfo": null, "Shape_Area": 7.56355581348e-07, "Shape_Leng": 0.00477947236498, "Snippet": null, "SymbolID": 0}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_46086b97c37d65cb038fbd73d6cd882c.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_46086b97c37d65cb038fbd73d6cd882c.addTo(map_68a61d75478b5de46b7fbf77dd8a4f03);
+        
+</script>
+</html>
